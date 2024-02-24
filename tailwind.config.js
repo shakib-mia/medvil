@@ -8,16 +8,16 @@ module.exports = {
   theme: {
     spacing: {
       0: '0px',
-      1: '8px',
-      2: '16px',
-      3: '24px',
-      4: '32px',
-      5: '40px',
-      6: '56px',
-      7: '72px',
-      8: '80px',
-      9: '96px',
-      10: '120px',
+      1: '0.5rem',
+      2: '1rem',
+      3: '1.5rem',
+      4: '3rem',
+      5: '2.5rem',
+      6: '3.5rem',
+      7: '4.5rem',
+      8: '5rem',
+      9: '6rem',
+      10: '8rem',
     },
     extend: {
       colors: {

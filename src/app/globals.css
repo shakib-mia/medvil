@@ -4,6 +4,7 @@
 
 p {
   font-family: 'DM Sans', sans-serif;
+  @apply text-lg;
 }
 
 h1,
@@ -11,10 +12,78 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.link {
   font-family: '__El_Messiri_3bcd15', '__El_Messiri_Fallback_3bcd15';
+}
+
+h1 {
+  @apply text-9xl font-bold;
+}
+
+h2 {
+  @apply text-7xl font-bold;
+}
+
+h3 {
+  @apply text-[4rem] font-bold;
+}
+
+h4 {
+  @apply text-[2rem] font-bold;
+}
+
+h5 {
+  @apply text-2xl font-bold;
+}
+
+a.link {
+  @apply text-lg font-semibold;
 }
 
 .container {
   @apply mx-auto max-w-[1320px] px-3 2xl:px-0;
+}
+
+.custom-pattern {
+  background:
+    repeating-linear-gradient(
+      45deg,
+      #0000 calc(-650% / 13) calc(50% / 13),
+      #f9faf8 0 calc(100% / 13),
+      #0000 0 calc(150% / 13),
+      #f9faf8 0 calc(200% / 13),
+      #0000 0 calc(250% / 13),
+      #f9faf8 0 calc(300% / 13)
+    ),
+    repeating-linear-gradient(
+        45deg,
+        #0000 calc(-650% / 13) calc(50% / 13),
+        #f9faf8 0 calc(100% / 13),
+        #0000 0 calc(150% / 13),
+        #f9faf8 0 calc(200% / 13),
+        #0000 0 calc(250% / 13),
+        #f9faf8 0 calc(300% / 13)
+      )
+      11px 11px,
+    repeating-linear-gradient(
+      -45deg,
+      #0000 calc(-650% / 13) calc(50% / 13),
+      #f9faf8 0 calc(100% / 13),
+      #0000 0 calc(150% / 13),
+      #f9faf8 0 calc(200% / 13),
+      #0000 0 calc(250% / 13),
+      #f9faf8 0 calc(300% / 13)
+    ),
+    repeating-linear-gradient(
+        -45deg,
+        #0000 calc(-650% / 13) calc(50% / 13),
+        #f9faf8 0 calc(100% / 13),
+        #0000 0 calc(150% / 13),
+        #f9faf8 0 calc(200% / 13),
+        #0000 0 calc(250% / 13),
+        #f9faf8 0 calc(300% / 13)
+      )
+      11px 11px #ffffff;
+  background-size: 22px 22px;
 }

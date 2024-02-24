@@ -1,11 +1,14 @@
-import Image from 'next/image';
-import { ElMessiri } from './layout';
-import Layouts from './components/Layouts/Layouts';
+import Header from '../components/Header/Header';
+import Layouts from '../components/Layouts/Layouts';
+import Services from '../components/Services/Services';
+import Sponsors from '../components/Sponsors/Sponsors';
 
 export default function Home() {
   return (
     <Layouts>
-      dfdf
+      <Header />
+      <Sponsors />
+      <Services />
     </Layouts>
   );
 }
