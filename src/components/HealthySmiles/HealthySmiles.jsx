@@ -18,11 +18,11 @@ const HealthySmiles = () => {
         className='absolute left-0 top-0 z-0 h-full w-full'
       />
 
-      <div className='container relative z-10 h-full w-full py-9'>
-        <div className='grid grid-cols-2'>
+      <div className='container relative z-10 h-full w-full py-5 md:py-9'>
+        <div className='grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-0'>
           <aside className='relative h-fit w-fit'>
             <Image src={healthySmiles} alt='healthy smiles' />
-            <div className='absolute bottom-3 right-[5.875rem] h-[3.75rem] w-[3.75rem] overflow-visible rounded-full'>
+            <div className='absolute bottom-1 right-6 h-[3.75rem] w-[3.75rem] overflow-visible rounded-full md:bottom-3 md:right-[5.875rem]'>
               <div className='relative'>
                 <div className='absolute left-0 top-0 z-0 h-full w-full animate-ping rounded-full bg-white opacity-30'></div>
                 <label htmlFor='video-check'>
@@ -64,7 +64,7 @@ const HealthySmiles = () => {
               </div>
             )}
           </aside>
-          <aside>
+          <aside className='text-center md:text-left'>
             <h3 className='text-secondary'>
               This is where <span className='text-primary'>healthy</span> smiles
               in <span className='text-primary'>Medvil</span> begin.
@@ -101,10 +101,10 @@ const HealthySmiles = () => {
               </li>
             </ul>
 
-            <Button>More About Us</Button>
+            <Button className='mx-auto'>More About Us</Button>
           </aside>
         </div>
-        <div className='mt-[9.5rem] flex items-center justify-between'>
+        <div className='mt-[9.5rem] flex items-center justify-between text-center'>
           <div className='py-3'>
             <h2 className='text-secondary'>
               <CountUp end={12} duration={1} enableScrollSpy />

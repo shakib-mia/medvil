@@ -38,16 +38,16 @@ const Services = () => {
   ];
 
   return (
-    <div className='container py-10'>
+    <div className='container py-4 md:py-6 xl:py-10'>
       <h3 className='text-center'>
         Services <span className='text-primary'>We Offer</span>
       </h3>
-      <p className='mx-auto w-1/2 text-center text-base text-grey-2'>
+      <p className='mx-auto text-center text-base text-grey-2 md:w-1/2'>
         It is a long established fact that a reader will be distracted by the
         readable content of a page when looking at its layout.
       </p>
 
-      <div className='mt-6 grid grid-cols-1 gap-3 md:grid-cols-2'>
+      <div className='mt-3 grid grid-cols-1 gap-2 md:mt-6 md:grid-cols-2 md:gap-3'>
         {services.map((service) => (
           <Service {...service} key={service.heading} />
         ))}

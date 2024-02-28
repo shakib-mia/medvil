@@ -4,7 +4,7 @@
 
 p {
   font-family: 'DM Sans', sans-serif;
-  @apply text-lg;
+  @apply text-sm md:text-lg;
 }
 
 h1,
@@ -18,19 +18,19 @@ h6,
 }
 
 h1 {
-  @apply text-9xl font-bold;
+  @apply text-4xl font-bold md:text-7xl xl:text-9xl;
 }
 
 h2 {
-  @apply text-7xl font-bold;
+  @apply text-3xl font-bold md:text-5xl xl:text-7xl;
 }
 
 h3 {
-  @apply text-[4rem] font-bold;
+  @apply text-2xl font-bold md:text-5xl xl:text-[4rem];
 }
 
 h4 {
-  @apply text-[2rem] font-bold;
+  @apply text-xl font-bold md:text-2xl xl:text-[2rem];
 }
 
 h5 {
@@ -42,7 +42,7 @@ a.link {
 }
 
 .container {
-  @apply mx-auto max-w-[1320px] px-3 2xl:px-0;
+  @apply mx-auto max-w-[1320px] px-2 2xl:px-0;
 }
 
 .custom-pattern {
