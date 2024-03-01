@@ -87,3 +87,35 @@ a.link {
       11px 11px #ffffff;
   background-size: 22px 22px;
 }
+/* 
+.owl-dots {
+  @apply flex justify-center;
+}
+
+.owl-dot span {
+  @apply !mx-[5px] inline-block !h-[10px] !w-[10px] rounded-full !bg-primary !bg-opacity-30 !transition-[width] !duration-300;
+}
+
+.owl-dot.active span {
+  @apply !w-[34px] !bg-primary;
+}
+
+.owl-carousel .owl-stage-outer {
+  @apply !p-[20px];
+} */
+
+.swiper-wrapper {
+  @apply mb-6;
+}
+
+.swiper-pagination-bullet {
+  @apply !bg-primary !bg-opacity-50 transition-[width] !duration-300;
+}
+
+.swiper-pagination-bullet-active {
+  @apply !w-[34px] !rounded-full !bg-primary !bg-opacity-100;
+}
+
+.swiper-slide-prev > div > div {
+  @apply shadow-none;
+}

@@ -9,14 +9,14 @@ import Image from 'next/image';
 
 const Sponsors = () => {
   return (
-    <div className='container flex flex-wrap justify-center gap-5 border-y border-grey-4 py-3 md:justify-evenly md:py-8 xl:justify-between'>
+    <section className='container flex flex-wrap justify-center gap-5 border-y border-grey-4 py-3 md:justify-evenly md:py-8 xl:justify-between'>
       <Image src={img6} alt='treva' />
       <Image src={img5} alt='kanba' />
       <Image src={img4} alt='hexlab' />
       <Image src={img3} alt='codelab' />
       <Image src={img2} alt='circle' />
       <Image src={img1} alt='zootv' />
-    </div>
+    </section>
   );
 };
 

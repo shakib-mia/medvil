@@ -11,7 +11,7 @@ const HealthySmiles = () => {
   const [showVideo, setShowVideo] = useState(false);
 
   return (
-    <div className='relative h-full'>
+    <section className='relative h-full'>
       <Image
         src={healthySmilesBg}
         alt='healthy smiles bg'
@@ -135,7 +135,7 @@ const HealthySmiles = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

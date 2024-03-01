@@ -38,7 +38,7 @@ const Services = () => {
   ];
 
   return (
-    <div className='container py-4 md:py-6 xl:py-10'>
+    <section className='container py-4 md:py-6 xl:py-10'>
       <h3 className='text-center'>
         Services <span className='text-primary'>We Offer</span>
       </h3>
@@ -52,7 +52,7 @@ const Services = () => {
           <Service {...service} key={service.heading} />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

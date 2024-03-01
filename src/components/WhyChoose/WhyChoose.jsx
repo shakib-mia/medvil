@@ -26,7 +26,7 @@ const WhyChoose = () => {
   ];
 
   return (
-    <div
+    <section
       id='why-choose'
       className='container grid grid-cols-1 items-center gap-4 py-9 md:gap-7 lg:grid-cols-2'
     >
@@ -45,7 +45,7 @@ const WhyChoose = () => {
       <aside>
         <Image src={whyChoose} alt='why-choose' />
       </aside>
-    </div>
+    </section>
   );
 };
 
