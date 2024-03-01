@@ -14,8 +14,8 @@ const Header = () => {
       className={`flex h-[80vh] items-center md:h-screen ${styles.backgroundImage}`}
     >
       <div className='container flex flex-col gap-1'>
-        <h1 className='flex items-center justify-center gap-2 text-center font-bold'>
-          <span className='w-1/2 sm:w-fit'>Maintain</span>
+        <h1 className='flex items-center justify-center text-center font-bold md:gap-2'>
+          <span className=''>Maintain</span>
           <div className='flex w-1/2 items-center gap-0'>
             <Image src={first} className='w-3/4' alt='first banner' />{' '}
             <Image src={badge} className='h-auto w-1/4' alt='badge' />
@@ -24,9 +24,9 @@ const Header = () => {
         <h1 className='text-center font-bold'>
           That <span className='text-primary'>Wonderful,</span>
         </h1>
-        <h1 className='flex items-center justify-evenly gap-0 text-center font-bold md:justify-center md:gap-4'>
+        <h1 className='flex items-center justify-evenly gap-0 text-center font-bold sm:justify-center sm:gap-2 md:justify-center md:gap-4'>
           <Image src={second} className='w-1/3 md:w-auto' alt='second banner' />{' '}
-          <aside className='w-2/3 md:w-auto'>Clean Smile</aside>
+          <aside>Clean Smile</aside>
         </h1>
 
         <div className='ml-auto mt-2 w-full text-center md:mt-0 md:text-left lg:w-1/2'>

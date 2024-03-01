@@ -9,7 +9,7 @@ import CountUp from 'react-countup';
 
 const HealthySmiles = () => {
   const [showVideo, setShowVideo] = useState(false);
-  console.log(showVideo);
+
   return (
     <div className='relative h-full'>
       <Image
@@ -101,7 +101,7 @@ const HealthySmiles = () => {
               </li>
             </ul>
 
-            <Button className='mx-auto'>More About Us</Button>
+            <Button className='mx-auto md:mx-0'>More About Us</Button>
           </aside>
         </div>
         <div className='mt-[9.5rem] flex items-center justify-between text-center'>
