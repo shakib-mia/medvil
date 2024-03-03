@@ -1,3 +1,7 @@
+import Appointment from '@/components/Appointment/Appointment';
+import Articles from '@/components/Articles/Articles';
+import ContactUs from '@/components/ContactUs/ContactUs';
+import Feedback from '@/components/Feedback/Feedback';
 import Header from '@/components/Header/Header';
 import HealthySmiles from '@/components/HealthySmiles/HealthySmiles';
 import Layouts from '@/components/Layouts/Layouts';
@@ -15,6 +19,10 @@ export default function Home() {
       <HealthySmiles />
       <WhyChoose />
       <Specialists />
+      <Appointment />
+      <Feedback />
+      <Articles />
+      <ContactUs />
     </Layouts>
   );
 }

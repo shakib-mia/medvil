@@ -65,29 +65,6 @@ const Specialists = () => {
         and keep tabs on rising lorem ipsum dolor sit.
       </p>
 
-      {/* <div className='owl-carousel'>
-        <div> Your Item 1 </div>
-        <div> Your Item 2 </div>
-        <div> Your Item 3 </div>
-      </div> */}
-
-      {/* <DynamicOwlCarousel
-        items={4}
-        loop={false}
-        // margin={24}
-        dots={true}
-        center={false}
-        className='mt-6'
-        onChange={(e) => console.log(e.target)}
-      >
-        <Specialist />
-        <Specialist />
-        <Specialist />
-        <Specialist />
-        <Specialist />
-        <Specialist />
-      </DynamicOwlCarousel> */}
-
       <Swiper
         spaceBetween={10}
         slidesPerView={4}

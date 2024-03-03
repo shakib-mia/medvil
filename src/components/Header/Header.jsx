@@ -11,7 +11,7 @@ import Sponsors from '../Sponsors/Sponsors';
 const Header = () => {
   return (
     <header
-      className={`flex h-[80vh] items-center md:h-screen ${styles.backgroundImage}`}
+      className={`flex h-[60vh] items-center md:h-[80vh] xl:h-screen ${styles.backgroundImage}`}
     >
       <div className='container flex flex-col gap-1'>
         <h1 className='flex items-center justify-center text-center font-bold md:gap-2'>
@@ -24,7 +24,7 @@ const Header = () => {
         <h1 className='text-center font-bold'>
           That <span className='text-primary'>Wonderful,</span>
         </h1>
-        <h1 className='flex items-center justify-evenly gap-0 text-center font-bold sm:justify-center sm:gap-2 md:justify-center md:gap-4'>
+        <h1 className='flex items-center justify-evenly gap-0 text-center font-bold sm:justify-center sm:gap-2 md:justify-center lg:gap-4'>
           <Image src={second} className='w-1/3 md:w-auto' alt='second banner' />{' '}
           <aside>Clean Smile</aside>
         </h1>

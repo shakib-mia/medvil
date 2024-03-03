@@ -18,8 +18,8 @@ const HealthySmiles = () => {
         className='absolute left-0 top-0 z-0 h-full w-full'
       />
 
-      <div className='container relative z-10 h-full w-full py-5 md:py-9'>
-        <div className='grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-0'>
+      <div className='container relative z-10 h-full w-full py-4 md:py-9'>
+        <div className='grid grid-cols-1 gap-3 md:grid-cols-2 xl:gap-0'>
           <aside className='relative h-fit w-fit'>
             <Image src={healthySmiles} alt='healthy smiles' />
             <div className='absolute bottom-1 right-6 h-[3.75rem] w-[3.75rem] overflow-visible rounded-full md:bottom-3 md:right-[5.875rem]'>

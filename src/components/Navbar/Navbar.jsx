@@ -62,7 +62,7 @@ const Navbar = () => {
           <Image src={logo} alt='logo' />
         </Link>
 
-        <aside className='md:hidden'>
+        <aside className='xl:hidden'>
           <label>
             <Image src={hamburger} alt='hamburger' className='w-3' />
             <input
@@ -112,7 +112,7 @@ const Navbar = () => {
           </ul>
         </aside>
 
-        <ul className='hidden gap-[2.5rem] text-lg md:flex'>
+        <ul className='hidden gap-[2.5rem] text-lg xl:flex'>
           {navItems.map(({ link, text }, key) => (
             <li
               key={key}
@@ -126,7 +126,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className='hidden items-center gap-4 md:flex'>
+        <div className='hidden items-center gap-4 xl:flex'>
           <Image src={cart} alt='cart' className='h-3 w-3 cursor-pointer' />
           <Button className='flex gap-2' onClick={() => alert('object')}>
             <div className='flex h-3 w-3 items-center justify-center rounded-full bg-white text-lg font-normal text-primary group-hover:bg-primary group-hover:text-white'>
