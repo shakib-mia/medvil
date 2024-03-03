@@ -1,6 +1,5 @@
 'use client';
 import React, { useEffect } from 'react';
-import DynamicOwlCarousel from '../DynamicOwlCarousel/DynamicOwlCarousel';
 import specialist1 from '../../assets/images/specialists/Rectangle 9444.png';
 import specialist2 from '../../assets/images/specialists/Rectangle 9444-1.png';
 import specialist3 from '../../assets/images/specialists/Rectangle 9444-2.png';
