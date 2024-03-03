@@ -13,7 +13,7 @@ const Header = () => {
     <header
       className={`flex h-[60vh] items-center md:h-[80vh] xl:h-screen ${styles.backgroundImage}`}
     >
-      <div className='container flex flex-col gap-1'>
+      <div className='container flex flex-col gap-1 xl:mt-6'>
         <h1 className='flex items-center justify-center text-center font-bold md:gap-2'>
           <span className=''>Maintain</span>
           <div className='flex w-1/2 items-center gap-0'>

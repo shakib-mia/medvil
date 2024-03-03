@@ -43,8 +43,8 @@ const HealthySmiles = () => {
             </div>
 
             {showVideo && (
-              <div className='fixed left-0 top-0 flex h-screen w-screen items-center justify-center backdrop-blur'>
-                <div className='relative'>
+              <div className='fixed left-0 top-0 flex h-screen w-screen items-center justify-center bg-black-2 bg-opacity-30 backdrop-blur'>
+                <div className='relative h-1/2 w-1/2'>
                   <button
                     onClick={() => setShowVideo(false)}
                     className='absolute -right-3 -top-3 text-3xl text-black-1'
@@ -52,8 +52,7 @@ const HealthySmiles = () => {
                     &times;
                   </button>
                   <iframe
-                    width='560'
-                    height='315'
+                    className='h-full w-full'
                     src='https://www.youtube.com/embed/T7MelADka-I?si=OaPUuC6YvfhIuCQf'
                     title='YouTube video player'
                     frameborder='0'

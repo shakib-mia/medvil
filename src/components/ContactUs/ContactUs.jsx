@@ -10,7 +10,7 @@ const ContactUs = () => {
       className='mt-9 bg-cover xl:h-screen'
       style={{ backgroundImage: `url(${contactBg.src})` }}
     >
-      <div className='container flex h-full flex-col justify-between'>
+      <div className='container flex h-full flex-col justify-between overflow-hidden'>
         <div className='mx-auto text-center lg:w-2/3'>
           <h3 className='text-secondary'>
             Are You Having <span className='text-primary'>Issues</span> With
