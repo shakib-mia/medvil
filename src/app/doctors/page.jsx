@@ -7,7 +7,7 @@ import specialist2 from '../../assets/images/specialists/Rectangle 9444-1.png';
 import specialist3 from '../../assets/images/specialists/Rectangle 9444-2.png';
 import specialist4 from '../../assets/images/specialists/Rectangle 9444-3.png';
 
-const page = () => {
+const Doctors = () => {
   const specialists = [
     {
       name: 'Dr. Rehana Bilkis',
@@ -76,4 +76,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Doctors;

@@ -53,11 +53,11 @@ const Navbar = () => {
 
   return (
     <nav
-      className='z-[9999] w-full bg-white pb-[0.875rem] pt-2'
+      className='z-[9999] w-full bg-white'
       id={'navbar'}
       style={{ boxShadow: '0px 0px 80px 0px #CDCCDC40' }}
     >
-      <div className='container flex items-center justify-between'>
+      <div className='container flex items-center justify-between pb-[0.875rem] pt-2'>
         <Link href={'/'} className='flex items-center'>
           <Image src={logo} alt='logo' />
         </Link>
@@ -105,10 +105,10 @@ const Navbar = () => {
           {navItems.map(({ link, text }, key) => (
             <li
               key={key}
-              className={`${pathname === link ? 'font-medium text-primary' : 'text-black-1'} relative my-auto`}
+              className={`${pathname === link ? 'font-medium text-primary' : 'text-black-1'} relative`}
             >
               {pathname === link && (
-                <div className='absolute left-0 right-0 top-[-4vh] m-auto h-[2rem] w-[0.125rem] bg-primary transition duration-500'></div>
+                <div className='absolute left-0 right-0 top-[-34px] m-auto h-[2rem] w-[0.125rem] bg-primary transition duration-500'></div>
               )}
               <Link href={link}>{text}</Link>
             </li>
