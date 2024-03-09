@@ -33,7 +33,7 @@ const Appointment = () => {
     <div className='bg-primary bg-opacity-5 py-10'>
       <div className='container'>
         <div className='flex flex-col items-center gap-4 md:flex-row'>
-          <div className='w-full md:w-1/2'>
+          <div className='w-full text-center md:w-1/2 md:text-left'>
             <h3 className='text-secondary'>
               We treat you in a{' '}
               <span className='text-primary'>best comfortable</span> manner.

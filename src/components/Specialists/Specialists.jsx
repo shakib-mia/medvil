@@ -9,8 +9,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import 'swiper/css/pagination';
 import 'swiper/css';
+import styles from './Specialists.module.css';
 
-const Specialists = () => {
+const Specialists = ({ containerClassName }) => {
+  console.log(styles.specialistsStyle);
   const specialists = [
     {
       name: 'Dr. Rehana Bilkis',
@@ -55,7 +57,10 @@ const Specialists = () => {
   ];
 
   return (
-    <section className='pb-10'>
+    <section
+      className={`pb-10 ${containerClassName}`}
+      id={styles.specialistsStyle}
+    >
       <h3 className='text-center text-secondary'>
         Meet Our <span className='text-primary'>Specialists</span>
       </h3>

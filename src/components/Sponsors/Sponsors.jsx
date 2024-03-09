@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import img6 from './../../assets/images/6352a0f3a3ecc1f81dff6dd1_Sponsor-Img-6.png';
 import img5 from './../../assets/images/6352a0f6bf61d682874d1937_Sponsor-Img-5.png';
@@ -6,16 +7,45 @@ import img3 from './../../assets/images/6352a0f991211c5fe86858c6_Sponsor-Img-3.p
 import img2 from './../../assets/images/6352a0fbef305ab20ede4aa8_Sponsor-Img-2.png';
 import img1 from './../../assets/images/6352a0fd3d82991fbed3f46b_Sponsor-Img-1.png';
 import Image from 'next/image';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css/pagination';
+import 'swiper/css';
+import styles from './Sponsors.module.css';
 
 const Sponsors = () => {
+  const allSponsors = [
+    { src: img6, alt: 'treva' },
+    { src: img5, alt: 'kanba' },
+    { src: img4, alt: 'hexlab' },
+    { src: img3, alt: 'codelab' },
+    { src: img2, alt: 'circle' },
+    { src: img1, alt: 'zootv' },
+  ];
   return (
-    <section className='container flex flex-wrap justify-center gap-4 border-y border-grey-4 py-3 md:justify-evenly md:py-8 xl:justify-between'>
-      <Image src={img6} alt='treva' />
-      <Image src={img5} alt='kanba' />
-      <Image src={img4} alt='hexlab' />
-      <Image src={img3} alt='codelab' />
-      <Image src={img2} alt='circle' />
-      <Image src={img1} alt='zootv' />
+    <section
+      className='container flex flex-wrap justify-center gap-4 border-y border-primary-light py-3 md:justify-evenly md:py-8 xl:justify-between'
+      id={styles.container}
+    >
+      <Swiper
+        className='w-full'
+        breakpoints={{
+          0: {
+            slidesPerView: 2,
+          },
+          768: {
+            slidesPerView: 4,
+          },
+          1024: {
+            slidesPerView: allSponsors.length,
+          },
+        }}
+      >
+        {allSponsors.map((sponsor) => (
+          <SwiperSlide key={sponsor.alt} className='!w-auto'>
+            <Image {...sponsor} alt={sponsor.alt} className='w-[141px]' />
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </section>
   );
 };

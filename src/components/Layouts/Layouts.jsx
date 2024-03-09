@@ -4,11 +4,12 @@ import Footer from '../Footer/Footer';
 
 const Layouts = ({ children }) => {
   return (
-    <>
+    <div className='relative'>
       <Navbar />
-      <main>{children}</main>
+
+      <main className='sticky w-full'>{children}</main>
       <Footer />
-    </>
+    </div>
   );
 };
 

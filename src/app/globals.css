@@ -109,7 +109,7 @@ a.link {
 } */
 
 .swiper-wrapper {
-  @apply mb-6;
+  @apply mb-[4rem];
 }
 
 .swiper-pagination-bullet {

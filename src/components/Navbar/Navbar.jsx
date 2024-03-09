@@ -42,7 +42,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const ulElement = document.querySelector('#navbar');
-    console.log(ulElement.clientHeight);
+    // console.log(ulElement.clientHeight);
     if (navChecked) {
       const height = 400 + 'px';
       setContentHeight(height);
@@ -53,8 +53,8 @@ const Navbar = () => {
 
   return (
     <nav
-      className='absolute w-full bg-white pb-[0.875rem] pt-2'
-      id='navbar'
+      className='z-[9999] w-full bg-white pb-[0.875rem] pt-2'
+      id={'navbar'}
       style={{ boxShadow: '0px 0px 80px 0px #CDCCDC40' }}
     >
       <div className='container flex items-center justify-between'>
@@ -73,7 +73,7 @@ const Navbar = () => {
           </label>
 
           <ul
-            className={`absolute left-0 top-7 flex w-full flex-col gap-3 overflow-hidden bg-white px-2 text-lg shadow-lg duration-700`}
+            className={`absolute left-0 top-7 z-10 flex w-full flex-col gap-3 overflow-hidden bg-white px-2 text-lg shadow-lg duration-700`}
             style={{ height: navChecked ? contentHeight : '0px' }}
             id='navbar'
           >
@@ -83,23 +83,13 @@ const Navbar = () => {
                 className={`${pathname === link ? 'font-medium text-primary' : 'text-black-1'} relative flex items-center gap-2`}
               >
                 {pathname === link && (
-                  <div className='h-[0.125rem] w-[2rem] bg-primary transition duration-500'></div>
+                  <div className='hidden h-[0.125rem] w-[2rem] bg-primary transition duration-500 lg:block'></div>
                 )}
                 <Link href={link}>{text}</Link>
               </li>
             ))}
-            {/* <div className='flex gap-4'> */}
-            {/* <li
-                key={key}
-                className={`${pathname === link ? 'font-medium text-primary' : 'text-black-1'} relative flex items-center gap-2`}
-              >
-                {pathname === link && (
-                  <div className='h-[0.125rem] w-[2rem] bg-primary transition duration-500'></div>
-                )}
-                <Link href={link}>{text}</Link>
-              </li> */}
 
-            <div className='flex items-center justify-center gap-2'>
+            <div className='flex items-center gap-2'>
               <Image src={cart} alt='cart' className='h-3 w-3 cursor-pointer' />
               <Button className='flex gap-1' onClick={() => alert('object')}>
                 <div className='flex h-3 w-3 items-center justify-center rounded-full bg-white text-lg font-normal text-primary group-hover:bg-primary group-hover:text-white'>
@@ -108,7 +98,6 @@ const Navbar = () => {
                 Create an Account
               </Button>
             </div>
-            {/* </div> */}
           </ul>
         </aside>
 

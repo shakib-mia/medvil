@@ -10,9 +10,7 @@ import Sponsors from '../Sponsors/Sponsors';
 
 const Header = () => {
   return (
-    <header
-      className={`flex h-[60vh] items-center md:h-[80vh] xl:h-screen ${styles.backgroundImage}`}
-    >
+    <header className={`py-9 ${styles.backgroundImage}`}>
       <div className='container flex flex-col gap-1 xl:mt-6'>
         <h1 className='flex items-center justify-center text-center font-bold md:gap-2'>
           <span className=''>Maintain</span>
