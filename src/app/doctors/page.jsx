@@ -57,7 +57,7 @@ const page = () => {
         <h3>Doctors</h3>
         <p>Home &raquo; Services</p>
       </BreadCumb>
-      <div className='py-10'>
+      <div className='py-4 md:py-6 xl:py-10'>
         <h3 className='text-center text-secondary'>
           Meet Our <span className='text-primary'>Specialists</span>
         </h3>
