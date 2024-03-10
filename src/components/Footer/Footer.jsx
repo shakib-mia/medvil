@@ -2,17 +2,14 @@ import React from 'react';
 import FooterBg from '../../assets/images/footer-bg.png';
 import logo from '../../assets/images/white-logo.png';
 import Image from 'next/image';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faFacebookF,
-  faLinkedinIn,
-  faTwitter,
-  faYoutube,
-} from '@fortawesome/free-brands-svg-icons';
 import location from '../../assets/icons/MapPinLine.png';
 import email from '../../assets/icons/EnvelopeSimpleOpen.png';
 import phone from '../../assets/icons/Phone.png';
 import Button from '../Button/Button';
+import { FaFacebookF } from 'react-icons/fa6';
+import { RiYoutubeLine } from 'react-icons/ri';
+import { FaTwitter } from 'react-icons/fa';
+import { FaLinkedinIn } from 'react-icons/fa6';
 
 const Footer = () => {
   return (
@@ -34,25 +31,25 @@ const Footer = () => {
                 href='#'
                 className='inline-flex h-5 w-5 items-center justify-center rounded-full bg-white text-xl text-blue transition hover:bg-primary hover:text-white'
               >
-                <FontAwesomeIcon icon={faFacebookF} />
+                <FaFacebookF />
               </a>
               <a
                 href='#'
                 className='inline-flex h-5 w-5 items-center justify-center rounded-full bg-white text-xl text-blue transition hover:bg-primary hover:text-white'
               >
-                <FontAwesomeIcon icon={faYoutube} />
+                <RiYoutubeLine />
               </a>
               <a
                 href='#'
                 className='inline-flex h-5 w-5 items-center justify-center rounded-full bg-white text-xl text-blue transition hover:bg-primary hover:text-white'
               >
-                <FontAwesomeIcon icon={faTwitter} />
+                <FaTwitter />
               </a>
               <a
                 href='#'
                 className='inline-flex h-5 w-5 items-center justify-center rounded-full bg-white text-xl text-blue transition hover:bg-primary hover:text-white'
               >
-                <FontAwesomeIcon icon={faLinkedinIn} />
+                <FaLinkedinIn />
               </a>
             </div>
           </div>

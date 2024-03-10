@@ -13,50 +13,78 @@ const Doctors = () => {
       name: 'Dr. Rehana Bilkis',
       image: specialist1,
       designation: 'Cardiologist',
+      fbLink: 'https://facebook.com/',
+      twitterLink: 'https://twitter.com/',
+      pinterestLink: 'https://www.pinterest.com/',
+      youtubeLink: 'https://www.youtube.com/',
     },
     {
       name: 'Dr. Michel Smith',
       image: specialist2,
       designation: 'Oncologist',
+      fbLink: 'https://facebook.com/',
+      twitterLink: 'https://twitter.com/',
+      pinterestLink: 'https://www.pinterest.com/',
+      youtubeLink: 'https://www.youtube.com/',
     },
     {
       name: 'Dr. Rehana Bilkis',
       image: specialist3,
       designation: 'Gynaecologist',
+      fbLink: 'https://facebook.com/',
+      twitterLink: 'https://twitter.com/',
+      pinterestLink: 'https://www.pinterest.com/',
+      youtubeLink: 'https://www.youtube.com/',
     },
     {
       name: 'Dr. Luther Mathews',
       image: specialist4,
       designation: 'Neurologist',
+      fbLink: 'https://facebook.com/',
+      twitterLink: 'https://twitter.com/',
+      pinterestLink: 'https://www.pinterest.com/',
+      youtubeLink: 'https://www.youtube.com/',
     },
     {
       name: 'Dr. Rehana Bilkis',
       image: specialist1,
       designation: 'Cardiologist',
+      fbLink: 'https://facebook.com/',
+      twitterLink: 'https://twitter.com/',
+      pinterestLink: 'https://www.pinterest.com/',
+      youtubeLink: 'https://www.youtube.com/',
     },
     {
       name: 'Dr. Michel Smith',
       image: specialist2,
       designation: 'Oncologist',
+      fbLink: 'https://facebook.com/',
+      twitterLink: 'https://twitter.com/',
+      pinterestLink: 'https://www.pinterest.com/',
+      youtubeLink: 'https://www.youtube.com/',
     },
     {
       name: 'Dr. Rehana Bilkis',
       image: specialist3,
       designation: 'Gynaecologist',
+      fbLink: 'https://facebook.com/',
+      twitterLink: 'https://twitter.com/',
+      pinterestLink: 'https://www.pinterest.com/',
+      youtubeLink: 'https://www.youtube.com/',
     },
     {
       name: 'Dr. Luther Mathews',
       image: specialist4,
       designation: 'Neurologist',
+      fbLink: 'https://facebook.com/',
+      twitterLink: 'https://twitter.com/',
+      pinterestLink: 'https://www.pinterest.com/',
+      youtubeLink: 'https://www.youtube.com/',
     },
   ];
 
   return (
-    <Layouts>
-      <BreadCumb>
-        <h3>Doctors</h3>
-        <p>Home &raquo; Services</p>
-      </BreadCumb>
+    <Layouts title='Doctors'>
       <div className='py-4 md:py-6 xl:py-10'>
         <h3 className='text-center text-secondary'>
           Meet Our <span className='text-primary'>Specialists</span>

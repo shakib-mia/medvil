@@ -40,35 +40,35 @@ const Partners = () => {
           <Image
             src={partner1}
             className='mx-auto h-3 w-auto md:h-6'
-            alt={partner1.name}
+            alt={'mtdoc'}
           />
         </SwiperSlide>
         <SwiperSlide>
           <Image
             src={partner2}
             className='mx-auto h-3 w-auto md:h-6'
-            alt={partner2.name}
+            alt={'the bespoke doctor'}
           />
         </SwiperSlide>
         <SwiperSlide>
           <Image
             src={partner3}
             className='mx-auto h-3 w-auto md:h-6'
-            alt={partner3.name}
+            alt={'Heart M'}
           />
         </SwiperSlide>
         <SwiperSlide>
           <Image
             src={partner4}
             className='mx-auto h-3 w-auto md:h-6'
-            alt={partner4.name}
+            alt={'Med+'}
           />
         </SwiperSlide>
         <SwiperSlide>
           <Image
             src={partner5}
             className='mx-auto h-3 w-auto md:h-6'
-            alt={partner5.name}
+            alt={'call the doctor'}
           />
         </SwiperSlide>
       </Swiper>

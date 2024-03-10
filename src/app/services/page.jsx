@@ -7,14 +7,7 @@ import React from 'react';
 
 const Page = () => {
   return (
-    <Layouts>
-      <Head>
-        <title>{'title'}</title>
-      </Head>
-      <BreadCumb>
-        <h3>Services</h3>
-        <p>Home &raquo; Services</p>
-      </BreadCumb>
+    <Layouts title='Services'>
       <Services />
     </Layouts>
   );

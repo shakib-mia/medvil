@@ -41,7 +41,7 @@ const Navbar = () => {
   const [contentHeight, setContentHeight] = useState('0px');
 
   useEffect(() => {
-    const ulElement = document.querySelector('#navbar');
+    // const ulElement = document.querySelector('#navbar');
     // console.log(ulElement.clientHeight);
     if (navChecked) {
       const height = 400 + 'px';
@@ -50,6 +50,12 @@ const Navbar = () => {
       setContentHeight('0px');
     }
   }, [navChecked]);
+
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   return (
     <nav
@@ -77,17 +83,18 @@ const Navbar = () => {
             style={{ height: navChecked ? contentHeight : '0px' }}
             id='navbar'
           >
-            {navItems.map(({ link, text }, key) => (
-              <li
-                key={key}
-                className={`${pathname === link ? 'font-medium text-primary' : 'text-black-1'} relative flex items-center gap-2`}
-              >
-                {pathname === link && (
-                  <div className='hidden h-[0.125rem] w-[2rem] bg-primary transition duration-500 lg:block'></div>
-                )}
-                <Link href={link}>{text}</Link>
-              </li>
-            ))}
+            {isClient &&
+              navItems.map(({ link, text }, key) => (
+                <li
+                  key={key}
+                  className={`${pathname === link ? 'font-medium text-primary' : 'text-black-1'} relative flex items-center gap-2`}
+                >
+                  {pathname === link && (
+                    <div className='hidden h-[0.125rem] w-[2rem] bg-primary transition duration-500 lg:block'></div>
+                  )}
+                  <Link href={link}>{text}</Link>
+                </li>
+              ))}
 
             <div className='flex items-center gap-2'>
               <Image src={cart} alt='cart' className='h-3 w-3 cursor-pointer' />

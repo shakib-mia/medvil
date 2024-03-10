@@ -6,17 +6,19 @@ import notFoundImage from '../assets/images/404.png';
 import Image from 'next/image';
 import Button from '@/components/Button/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft, faHomeAlt } from '@fortawesome/free-solid-svg-icons';
+// import { faHomeAlt } from '@fortawesome/free-solid-svg-icons';
 import { useRouter } from 'next/navigation';
+import { FaArrowLeft } from 'react-icons/fa6';
+import { GrHomeRounded } from 'react-icons/gr';
 
 const NotFound = () => {
   const router = useRouter();
   return (
-    <Layouts>
-      <BreadCumb>
+    <Layouts title='404'>
+      {/* <BreadCumb>
         <h3>404</h3>
         <p>Home &raquo; 404</p>
-      </BreadCumb>
+      </BreadCumb> */}
 
       <Image src={notFoundImage} alt='not found page' className='mx-auto' />
 
@@ -36,7 +38,7 @@ const NotFound = () => {
               className='flex items-center gap-1 !rounded-full'
               onClick={() => router.back()}
             >
-              <FontAwesomeIcon icon={faArrowLeft} />
+              <FaArrowLeft />
               GO BACK
             </Button>
 
@@ -45,7 +47,7 @@ const NotFound = () => {
               outlined
               onClick={() => router.push('/')}
             >
-              <FontAwesomeIcon icon={faHomeAlt} />
+              <GrHomeRounded />
               GO TO HOME
             </Button>
           </div>

@@ -1,12 +1,6 @@
-import {
-  faFacebookF,
-  faPinterest,
-  faTwitter,
-  faYoutube,
-} from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
 import React from 'react';
+import { FaFacebookF, FaPinterest, FaTwitter, FaYoutube } from 'react-icons/fa';
 
 const Specialist = ({
   image,
@@ -29,28 +23,28 @@ const Specialist = ({
                 target='_blank'
                 className='flex h-[36px] w-[36px] items-center justify-center rounded bg-primary text-white transition hover:scale-125'
               >
-                <FontAwesomeIcon className='w-1' icon={faFacebookF} />
+                <FaFacebookF />
               </a>
               <a
                 href={twitterLink}
                 target='_blank'
                 className='flex h-[36px] w-[36px] items-center justify-center rounded bg-primary text-white transition hover:scale-125'
               >
-                <FontAwesomeIcon className='w-2' icon={faTwitter} />
+                <FaTwitter />
               </a>
               <a
                 href={pinterestLink}
                 target='_blank'
                 className='flex h-[36px] w-[36px] items-center justify-center rounded bg-primary text-white transition hover:scale-125'
               >
-                <FontAwesomeIcon className='w-2' icon={faPinterest} />
+                <FaPinterest />
               </a>
               <a
                 href={youtubeLink}
                 target='_blank'
                 className='flex h-[36px] w-[36px] items-center justify-center rounded bg-primary text-white transition hover:scale-125'
               >
-                <FontAwesomeIcon className='w-2' icon={faYoutube} />
+                <FaYoutube />
               </a>
             </div>
           </div>

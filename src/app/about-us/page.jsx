@@ -9,12 +9,7 @@ import Partners from '@/components/Partners/Partners';
 
 const About = () => {
   return (
-    <Layouts>
-      <BreadCumb>
-        <h3>About Us</h3>
-        <p>Home &raquo; About us</p>
-      </BreadCumb>
-
+    <Layouts title='About Us'>
       <HealthySmiles />
       <Services />
       <Appointment />

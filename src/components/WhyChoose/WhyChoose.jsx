@@ -14,6 +14,7 @@ import {
   faChevronCircleRight,
   faChevronRight,
 } from '@fortawesome/free-solid-svg-icons';
+import { FaChevronRight } from 'react-icons/fa';
 
 const WhyChoose = () => {
   const contents = [
@@ -67,40 +68,43 @@ const WhyChoose = () => {
         </div>
       </aside>
 
-      <aside className='relative'>
-        <Image src={whyChoose} alt='why-choose' />
-        <div
-          className='absolute -bottom-8 -left-9 w-[280px] rounded-lg bg-white p-3'
-          style={{ boxShadow: '0px 0px 80px 0px #036C5F1C' }}
-        >
-          <div className='flex justify-between'>
-            <aside>
-              <h6 className='mb-[2px]'>Available Doctors</h6>
-              <small className='text-sm'>Select Doctors</small>
-            </aside>
-            <aside>
-              <Image
-                src={threeDots}
-                alt={'threeDots'}
-                className='mt-1 cursor-pointer'
-              />
-            </aside>
-          </div>
-
-          <div className='my-3 flex flex-col gap-3'>
-            {doctors.map((doctor, key) => (
-              <AvailableDoctor {...doctor} key={key} />
-            ))}
-
-            <Button
-              className='flex h-4 w-[14.5rem] items-center gap-2 border border-transparent !border-opacity-30 bg-primary bg-opacity-30 py-[11px] !text-primary hover:border-primary hover:bg-transparent md:h-4 md:w-[14.5rem]'
-              light
-            >
-              Answer the Question
-              <aside className='flex h-[18px] w-[18px] items-center justify-center rounded-full bg-primary bg-opacity-20'>
-                <FontAwesomeIcon icon={faChevronRight} size='2xs' />
+      <aside className='flex w-full scale-75 justify-center lg:scale-100'>
+        <div className='relative -right-4 lg:right-0'>
+          <Image src={whyChoose} alt='why-choose' />
+          <div
+            className='absolute -bottom-8 -left-9 w-[280px] rounded-lg bg-white p-3'
+            style={{ boxShadow: '0px 0px 80px 0px #036C5F1C' }}
+          >
+            <div className='flex justify-between'>
+              <aside>
+                <h6 className='mb-[2px]'>Available Doctors</h6>
+                <small className='text-sm'>Select Doctors</small>
               </aside>
-            </Button>
+              <aside>
+                <Image
+                  src={threeDots}
+                  alt={'threeDots'}
+                  className='mt-1 cursor-pointer'
+                />
+              </aside>
+            </div>
+
+            <div className='my-3 flex flex-col gap-3'>
+              {doctors.map((doctor, key) => (
+                <AvailableDoctor {...doctor} key={key} />
+              ))}
+
+              <Button
+                className='flex h-4 w-[14.5rem] items-center gap-2 border border-transparent !border-opacity-30 bg-primary bg-opacity-30 py-[11px] font-medium !text-primary hover:border-primary hover:bg-transparent md:h-4 md:w-[14.5rem]'
+                light
+              >
+                Answer the Question
+                <aside className='flex h-[18px] w-[18px] items-center justify-center rounded-full bg-primary bg-opacity-20'>
+                  {/* <FontAwesomeIcon icon={faChevronRight} size='2xs' /> */}
+                  <FaChevronRight className='w-[0.4rem]' />
+                </aside>
+              </Button>
+            </div>
           </div>
         </div>
       </aside>

@@ -12,7 +12,6 @@ import 'swiper/css';
 import styles from './Specialists.module.css';
 
 const Specialists = ({ containerClassName }) => {
-  console.log(styles.specialistsStyle);
   const specialists = [
     {
       name: 'Dr. Rehana Bilkis',
