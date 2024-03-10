@@ -94,7 +94,7 @@ const Doctors = () => {
           fraud and keep tabs on rising lorem ipsum dolor sit.
         </p>
 
-        <div className='container mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
+        <div className='container mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
           {specialists.map((specialist, key) => (
             <Specialist {...specialist} key={key} />
           ))}
