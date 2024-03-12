@@ -12,7 +12,7 @@ const Service = ({ image, heading, paragraph, link }) => {
         {paragraph}
       </p>
 
-      <ButtonLink link={link || '/'}>Read More</ButtonLink>
+      <ButtonLink link={link || '/services/details'}>Read More</ButtonLink>
 
       <div className='absolute bottom-0 left-0 right-0 mx-auto h-[0.188rem] w-0 bg-primary duration-500 group-hover/item:w-full'></div>
     </div>

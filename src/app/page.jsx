@@ -9,8 +9,13 @@ import Services from '@/components/Services/Services';
 import Specialists from '@/components/Specialists/Specialists';
 import Sponsors from '@/components/Sponsors/Sponsors';
 import WhyChoose from '@/components/WhyChoose/WhyChoose';
+import { RouteHistoryContext } from '@/contexts/RouteHistoryContext';
+import { useContext } from 'react';
 
 export default function Home() {
+  // const { routes } = useContext(RouteHistoryContext);
+  // console.log(routes);
+
   return (
     <Layouts>
       <Header />

@@ -1,14 +1,7 @@
 import Layouts from '@/components/Layouts/Layouts';
-// import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import {
-  faEnvelope,
-  faLocationDot,
-  faPhone,
-} from '@fortawesome/free-solid-svg-icons';
 import phone from '../../assets/icons/phone.svg';
 import location from '../../assets/icons/location.svg';
 import mail from '../../assets/icons/mail.svg';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import Image from 'next/image';
 import InputField from '@/components/InputField/InputField';
@@ -17,7 +10,7 @@ import Button from '@/components/Button/Button';
 const Page = () => {
   return (
     <Layouts title='Contact Us'>
-      <div className='container flex flex-col gap-x-10 py-4 md:flex-row md:py-6 xl:py-10'>
+      <div className='container flex flex-col py-4 md:flex-row md:py-6 lg:gap-x-10 xl:py-10'>
         <aside className='w-full text-grey-3 lg:w-1/4'>
           <h4 className='text-secondary'>Contact Info</h4>
           <p className='mt-2'>
@@ -85,9 +78,9 @@ const Page = () => {
       <iframe
         src='https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d414.1983031683241!2d91.78842422958131!3d22.305571367630233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1710049551158!5m2!1sen!2sbd'
         className='container mb-4 aspect-[16/6] border-0 md:mb-6 xl:mb-10'
-        allowfullscreen=''
+        allowFullScreen=''
         loading='lazy'
-        referrerpolicy='no-referrer-when-downgrade'
+        referrerPolicy='no-referrer-when-downgrade'
       ></iframe>
     </Layouts>
   );

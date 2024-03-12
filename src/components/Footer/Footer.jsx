@@ -14,7 +14,7 @@ import { FaLinkedinIn } from 'react-icons/fa6';
 const Footer = () => {
   return (
     <div
-      className='bg-blue bg-cover bg-no-repeat py-8'
+      className='bg-blue bg-cover bg-no-repeat pb-5 pt-8'
       style={{ backgroundImage: `url(${FooterBg.src})` }}
     >
       <div className='container'>
@@ -140,6 +140,11 @@ const Footer = () => {
             <p>Sunday: closed</p>
           </div>
         </div>
+      </div>
+      <hr className='my-3 bg-[#FFFFFF45]' />
+      <div className='container flex justify-between text-grey-5'>
+        <p>Copyright, Privacy Policy, Sitemap, Accessibility</p>
+        <p>Medical & Dental by Marin Soft Ltd</p>
       </div>
     </div>
   );

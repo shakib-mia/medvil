@@ -18,42 +18,42 @@ const Services = () => {
       heading: 'Teeth Whitening',
       paragraph:
         'We are committed to providing excellent medical care and services to our patients. We believe in continuously improving our skills, knowledge, and resources to ensure that we deliver the highest quality care possible.',
-      link: '/',
+      link: '/services/details',
     },
     {
       image: rootCanal,
       heading: 'Root Canal',
       paragraph:
         "We believe in practicing medicine with integrity and honesty. We are transparent in our communication and decision-making processes, and we always put our patient's interests first & provide best solution.",
-      link: '/',
+      link: '/services/details',
     },
     {
       image: dentalSurgery,
       heading: 'Dental Surgery',
       paragraph:
         'We treat all individuals with respect and dignity, regardless of their background, beliefs, or circumstances. We believe that every person deserves to be treated with compassion and kindness.',
-      link: '/',
+      link: '/services/details',
     },
     {
       image: gumTreatment,
       heading: 'Gum Treatment',
       paragraph:
         'We believe in working collaboratively with our team members and other healthcare professionals to provide comprehensive and effective care to our patients.',
-      link: '/',
+      link: '/services/details',
     },
     {
       image: plasticSurgery,
       heading: 'Plastic Surgery',
       paragraph:
         'We leverage our years of experience, knowledge, industry contacts, and asset protection strategies to provide our clients with a unique client-centric experience',
-      link: '/',
+      link: '/services/details',
     },
     {
       image: nephrology,
       heading: 'Nephrology',
       paragraph:
         'At Generational Law Group, we’ve built our practice to focus on the needs of Entertainment Professionals, Content Creators, Creative Businesses & Executives, and established individuals and their families.',
-      link: '/',
+      link: '/services/details',
     },
   ];
 
