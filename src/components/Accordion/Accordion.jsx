@@ -21,7 +21,7 @@ const Accordion = ({ heading, text }) => {
               className='flex w-full cursor-pointer items-center justify-between pr-[32px]'
               onClick={() => setOpen(false)}
             >
-              <p>{heading}</p>
+              <p className='text-secondary'>{heading}</p>
               <aside className='flex h-[30px] w-[30px] cursor-pointer items-center justify-center rounded-full bg-primary bg-opacity-10 text-primary'>
                 -
               </aside>
