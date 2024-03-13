@@ -1,9 +1,9 @@
-'use client';
+// 'use client';
 import React from 'react';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 import BreadCumb from '../BreadCumb/BreadCumb';
-import { usePathname } from 'next/navigation';
+// import { usePathname } from 'next/navigation';
 import Head from 'next/head';
 import Link from 'next/link';
 
@@ -11,7 +11,7 @@ const Layouts = ({ children, title }) => {
   // const { previousRoute } = useRouteHistory();
   // console.log(previousRoute);
 
-  const pathname = usePathname();
+  // const pathname = usePathname();
   return (
     <>
       <Head>
@@ -19,7 +19,7 @@ const Layouts = ({ children, title }) => {
       </Head>
       <div className='relative'>
         <Navbar />
-        {pathname !== '/' && (
+        {title && (
           <BreadCumb>
             <h3 className='capitalize'>{title}</h3>
             <p className='capitalize'>
