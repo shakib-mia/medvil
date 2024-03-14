@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import { FaFacebookF, FaPinterest, FaTwitter, FaYoutube } from 'react-icons/fa';
 
@@ -49,7 +50,9 @@ const Specialist = ({
             </div>
           </div>
         </div>
-        <h5 className='mt-3'>{name}</h5>
+        <h5 className='mt-3'>
+          <Link href={'/doctor-details'}>{name}</Link>
+        </h5>
         <p className='text-grey-2'>{designation}</p>
       </div>
     </div>

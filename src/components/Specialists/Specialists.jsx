@@ -89,7 +89,7 @@ const Specialists = ({ containerClassName }) => {
 
   return (
     <section
-      className={`pb-10 ${containerClassName}`}
+      className={`py-10 ${containerClassName}`}
       id={styles.specialistsStyle}
     >
       <h3 className='text-center text-secondary'>

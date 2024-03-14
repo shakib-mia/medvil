@@ -28,25 +28,25 @@ const Footer = () => {
 
             <div className='flex gap-3'>
               <a
-                href='#'
+                href='https://www.facebook.com/RadditoLLC'
                 className='inline-flex h-5 w-5 items-center justify-center rounded-full bg-white text-xl text-blue transition hover:bg-primary hover:text-white'
               >
                 <FaFacebookF />
               </a>
               <a
-                href='#'
+                href='https://www.youtube.com/@RadditoLLC'
                 className='inline-flex h-5 w-5 items-center justify-center rounded-full bg-white text-xl text-blue transition hover:bg-primary hover:text-white'
               >
                 <RiYoutubeLine />
               </a>
               <a
-                href='#'
+                href='https://twitter.com/RadditoLLC'
                 className='inline-flex h-5 w-5 items-center justify-center rounded-full bg-white text-xl text-blue transition hover:bg-primary hover:text-white'
               >
                 <FaTwitter />
               </a>
               <a
-                href='#'
+                href='https://www.linkedin.com/company/radditollc/'
                 className='inline-flex h-5 w-5 items-center justify-center rounded-full bg-white text-xl text-blue transition hover:bg-primary hover:text-white'
               >
                 <FaLinkedinIn />
@@ -99,10 +99,10 @@ const Footer = () => {
                 <aside>
                   <p className='mb-[4px] text-base'>Email</p>
                   <a
-                    href='mailto:Info@gmail.com'
+                    href='mailto:support@raddito.com'
                     className='text-base text-[#CCD7E5]'
                   >
-                    Info@gmail.com
+                    support@raddito.com
                   </a>
                 </aside>
               </li>
@@ -115,7 +115,7 @@ const Footer = () => {
                 />
                 <aside>
                   <p className='mb-[4px] text-base'>Phone</p>
-                  <p className='text-base text-[#CCD7E5]'>123 435 6787</p>
+                  <p className='text-base text-[#CCD7E5]'>833-900-8338</p>
                 </aside>
               </li>
             </ul>
