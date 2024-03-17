@@ -5,7 +5,7 @@ import healthySmiles from '../../assets/images/healthy-smiles.png';
 import Image from 'next/image';
 import Button from '../Button/Button';
 import play from '../../assets/icons/play.jpg';
-import CountUp from 'react-countup';
+import Stat from '../Stat/Stat';
 
 const HealthySmiles = () => {
   const [showVideo, setShowVideo] = useState(false);
@@ -103,36 +103,7 @@ const HealthySmiles = () => {
             <Button className='mx-auto md:mx-0'>More About Us</Button>
           </aside>
         </div>
-        <div className='mt-[9.5rem] flex flex-wrap items-center justify-between text-center md:flex-nowrap'>
-          <div className='w-1/2 py-3 xl:w-1/4'>
-            <h2 className='text-secondary'>
-              <CountUp end={12} duration={1} enableScrollSpy />
-              k+
-            </h2>
-            <p className='text-grey-3'>Happy Clients</p>
-          </div>
-          <div className='hidden h-[4.125rem] w-[1px] bg-primary opacity-45 md:block'></div>
-          <div className='w-1/2 py-3 xl:w-1/4'>
-            <h2 className='text-secondary'>
-              <CountUp end={16} duration={1} enableScrollSpy />+
-            </h2>
-            <p className='text-grey-3'>Health Section</p>
-          </div>
-          <div className='hidden h-[4.125rem] w-[1px] bg-primary opacity-45 md:block'></div>
-          <div className='w-1/2 py-3 xl:w-1/4'>
-            <h2 className='text-secondary'>
-              <CountUp end={45} duration={1} enableScrollSpy />+
-            </h2>
-            <p className='text-grey-3'>Certified Dentists</p>
-          </div>
-          <div className='hidden h-[4.125rem] w-[1px] bg-primary opacity-45 md:block'></div>
-          <div className='w-1/2 py-3 xl:w-1/4'>
-            <h2 className='text-secondary'>
-              <CountUp end={48} duration={1} enableScrollSpy />+
-            </h2>
-            <p className='text-grey-3'>Award Winning</p>
-          </div>
-        </div>
+        <Stat />
       </div>
     </section>
   );

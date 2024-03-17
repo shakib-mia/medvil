@@ -4,13 +4,22 @@ import doctor from '../../assets/images/doctor-details.png';
 import Image from 'next/image';
 import Button from '@/components/Button/Button';
 import { FaCheck } from 'react-icons/fa6';
+import MakeAppointment from '@/components/MakeAppointment/MakeAppointment';
+import Video from '@/components/Video/Video';
+import videoPlaceholder from '@/assets/images/video-placeholder.jpg';
+import Stat from '@/components/Stat/Stat';
+import DoctorFeedbacks from '@/components/DoctorFeedbacks/DoctorFeedbacks';
 
 const page = () => {
   return (
     <Layouts title='Doctor Details'>
-      <div className='container flex gap-5 py-10'>
-        <div className='w-5/12'>
-          <Image src={doctor} alt='doctor' className='w-full' />
+      <div className='container flex flex-col gap-5 py-4 md:py-6 lg:flex-row xl:py-10'>
+        <div className='w-full lg:w-5/12'>
+          <Image
+            src={doctor}
+            alt='doctor'
+            className='h-[40.875rem] w-full object-cover'
+          />
           <div className='relative mt-3 rounded-lg bg-[#F3F6F7] p-4 pb-8'>
             <h5 className='mb-2 text-[#3F3A64]'>My time Schedule</h5>
             <div className='divide-y divide-dashed divide-[#00000030]'>
@@ -28,14 +37,14 @@ const page = () => {
               </div>
             </div>
 
-            <Button className='absolute bottom-[-1.5rem] left-0 right-0 mx-auto !rounded-full hover:bg-slate-200 md:bottom-[-2rem]'>
+            <Button className='absolute bottom-[-1.5rem] left-0 right-0 mx-auto !rounded-full hover:!bg-[#F3F6F7] md:bottom-[-2rem]'>
               (123) 34764 43456
             </Button>
           </div>
         </div>
-        <div className='w-7/12'>
+        <div className='w-full lg:w-7/12'>
           <div className='flex items-center justify-between pb-3'>
-            <h3 className='text-5xl'>Dr. John Deo</h3>
+            <h3 className='text-2xl md:text-3xl lg:text-5xl'>Dr. John Deo</h3>
             <div className='bg-[#F3F6F7] px-4 py-1 text-lg font-medium text-primary'>
               Fee: $65
             </div>
@@ -111,15 +120,19 @@ const page = () => {
             </div>
           </div>
 
-          <div className='mt-4 rounded-lg bg-primary p-6 text-white'>
-            <h4>Book An Appointment</h4>
-            <p className='mt-2 w-4/6 text-base'>
-              Scenarios and economically sound ROI. Dynamically seize cross
-              platform {'"outside the box"'} thinking after enterprise...
-            </p>
-          </div>
+          <MakeAppointment />
         </div>
       </div>
+
+      <Video
+        placeholder={videoPlaceholder}
+        videoLink={
+          'https://www.youtube.com/embed/lw7xIB0kPCo?si=UdUR3jai2_hGbI6y'
+        }
+      />
+
+      <Stat textPrimary />
+      <DoctorFeedbacks />
     </Layouts>
   );
 };
