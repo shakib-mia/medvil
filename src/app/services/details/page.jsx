@@ -5,6 +5,9 @@ import RecentPosts from '@/components/RecentPosts/RecentPosts';
 import React from 'react';
 import { CiSearch } from 'react-icons/ci';
 import ServiceDetails from '@/components/ServiceDetails/ServiceDetails';
+import bg from '@/assets/images/call-for-help-bg.png';
+import { FaPhoneVolume } from 'react-icons/fa6';
+import { FiPhoneCall } from 'react-icons/fi';
 
 const page = () => {
   return (
@@ -23,6 +26,18 @@ const page = () => {
           {/* <RecentPosts /> */}
           {/* </div> */}
           <Categories />
+          <div
+            className='mt-3 flex items-center bg-[size:100%_100%] bg-no-repeat p-2 text-white'
+            style={{ backgroundImage: `url(${bg.src})` }}
+          >
+            <div className='border-r border-white pr-2'>
+              <FiPhoneCall />
+            </div>
+            <p className='el-messiri pl-2 text-lg'>
+              Call For Any Help <br />
+              +99 - 234 436 34
+            </p>
+          </div>
         </aside>
         <aside className='w-full xl:w-8/12'>
           <ServiceDetails />
