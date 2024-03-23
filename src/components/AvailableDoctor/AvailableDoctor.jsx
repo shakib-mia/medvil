@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const AvailableDoctor = ({ image, name, designation }) => {
@@ -12,7 +13,12 @@ const AvailableDoctor = ({ image, name, designation }) => {
         alt={name}
       />
       <aside>
-        <p className='mb-[4px] text-sm font-bold text-secondary'>{name}</p>
+        <Link
+          href={'/doctor-details'}
+          className='mb-[4px] text-sm font-bold text-secondary'
+        >
+          {name}
+        </Link>
         <p className='text-grey-3'>{designation}</p>
       </aside>
     </div>

@@ -7,6 +7,7 @@ import AppointmentItem from '../AppointmentItem/AppointmentItem';
 import dentalService from '../../assets/images/dental-services.jpg';
 import dentalTeam from '../../assets/images/dental-team.jpg';
 import dentalTreatment from '../../assets/images/dental-treatment.jpg';
+import { FaCalendarAlt } from 'react-icons/fa';
 
 const Appointment = () => {
   const appointmentItems = [
@@ -51,7 +52,9 @@ const Appointment = () => {
                 width={117}
                 alt='cta-button'
               />
-              <Button>Book Appointment</Button>
+              <Button className='flex gap-1'>
+                <FaCalendarAlt /> Book Appointment
+              </Button>
             </div>
           </div>
         </div>

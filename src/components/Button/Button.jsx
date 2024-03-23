@@ -6,7 +6,7 @@ const Button = (props) => {
 
   const variants = outlined
     ? 'border-[#0BBC5C26] text-primary hover:border-primary hover:bg-primary hover:text-white'
-    : 'border-[#0BBC5C26] bg-primary text-white hover:bg-transparent hover:text-primary';
+    : 'border-primary bg-primary text-white hover:bg-white hover:text-primary';
 
   return (
     <button

@@ -53,7 +53,7 @@ const page = () => {
           <h5 className='border-b border-[#66666638] pb-2 text-xl'>
             About The Doctor
           </h5>
-          <p className='mb-10 mt-2 text-base text-[#7D7D7D]'>
+          <p className='mb-4 mt-2 text-base text-[#7D7D7D] md:mb-7 lg:mb-10'>
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout. The point
             of using Lorem Ipsum is that it has a more-or-less normal
@@ -62,7 +62,7 @@ const page = () => {
             English. Many desktop publishing packages and web page editors
           </p>
 
-          <div className='flex rounded-lg bg-[#F3F6F7] p-3'>
+          <div className='flex rounded-lg bg-[#F3F6F7] p-2 lg:p-3'>
             <div className='w-5/12'>
               <h6 className='font-bold text-[#3F3A64]'>Speciality</h6>
             </div>
@@ -71,7 +71,7 @@ const page = () => {
             </div>
           </div>
 
-          <div className='flex rounded-lg  p-3'>
+          <div className='flex rounded-lg  p-2 lg:p-3'>
             <div className='w-5/12'>
               <h6 className='font-bold text-[#3F3A64]'>Degrees</h6>
             </div>
@@ -80,7 +80,7 @@ const page = () => {
             </div>
           </div>
 
-          <div className='flex rounded-lg bg-[#F3F6F7] p-3'>
+          <div className='flex rounded-lg bg-[#F3F6F7] p-2 lg:p-3'>
             <div className='w-5/12'>
               <h6 className='font-bold text-[#3F3A64]'>Areas of Expertise</h6>
             </div>
@@ -100,7 +100,7 @@ const page = () => {
             </div>
           </div>
 
-          <div className='flex rounded-lg  p-3'>
+          <div className='flex rounded-lg  p-2 lg:p-3'>
             <div className='w-5/12'>
               <h6 className='font-bold text-[#3F3A64]'>Office</h6>
             </div>
@@ -111,7 +111,7 @@ const page = () => {
             </div>
           </div>
 
-          <div className='flex rounded-lg bg-[#F3F6F7] p-3'>
+          <div className='flex rounded-lg bg-[#F3F6F7] p-2 lg:p-3'>
             <div className='w-5/12'>
               <h6 className='font-bold text-[#3F3A64]'>University</h6>
             </div>

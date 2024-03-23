@@ -2,7 +2,7 @@ import React from 'react';
 
 const Feature = ({ heading, paragraph, serial }) => {
   return (
-    <div className='flex gap-3'>
+    <div className='flex gap-3 pt-3 md:pt-8'>
       <h4 className='text-primary'>{serial}/</h4>
       <aside>
         <h4 className='text-secondary'>{heading}</h4>

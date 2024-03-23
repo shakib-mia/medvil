@@ -132,7 +132,9 @@ const Footer = () => {
                 className='p-2 text-grey-2 focus:outline-none'
                 placeholder='Free Consultation'
               />
-              <Button className='h-auto rounded-l-none'>Go</Button>
+              <Button className='h-auto rounded-l-none border-l-0 hover:!bg-transparent'>
+                Go
+              </Button>
             </div>
 
             <h5 className='mb-2'>Open hours</h5>

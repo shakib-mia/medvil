@@ -61,7 +61,7 @@ const WhyChoose = () => {
           Why Choose <span className='text-primary'>Medvil?</span>
         </h3>
 
-        <div className='mt-4 flex flex-col gap-3 md:mt-6 md:gap-8'>
+        <div className='mt-4 flex flex-col gap-3 divide-y divide-grey-3 md:mt-6 md:gap-8'>
           {contents.map((content) => (
             <Feature {...content} key={content.serial} />
           ))}
@@ -72,7 +72,7 @@ const WhyChoose = () => {
         <div className='relative -right-4 lg:right-0'>
           <Image src={whyChoose} alt='why-choose' />
           <div
-            className='absolute -bottom-8 -left-9 w-[280px] rounded-lg bg-white p-3'
+            className='absolute -bottom-8 -left-9 h-fit w-[280px] rounded-lg bg-white p-3'
             style={{ boxShadow: '0px 0px 80px 0px #036C5F1C' }}
           >
             <div className='flex justify-between'>
@@ -95,7 +95,7 @@ const WhyChoose = () => {
               ))}
 
               <Button
-                className='flex h-4 w-[14.5rem] items-center gap-2 border border-transparent !border-opacity-30 bg-primary bg-opacity-30 py-[11px] font-medium !text-primary hover:border-primary hover:bg-transparent md:h-4 md:w-[14.5rem]'
+                className='flex !h-4 w-[14.5rem] items-center gap-2 border border-transparent !border-opacity-30 bg-primary bg-opacity-30 font-medium !text-primary hover:border-primary hover:bg-transparent md:w-[14.5rem]'
                 light
               >
                 Answer the Question

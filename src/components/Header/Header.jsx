@@ -7,10 +7,11 @@ import styles from './Header.module.css';
 import Image from 'next/image';
 import Button from '../Button/Button';
 import Sponsors from '../Sponsors/Sponsors';
+import { FaCalendarAlt } from 'react-icons/fa';
 
 const Header = () => {
   return (
-    <header className={`py-9 ${styles.backgroundImage}`}>
+    <header className={`py-9 lg:py-7 ${styles.backgroundImage}`}>
       <div className='container flex flex-col gap-1 xl:mt-6'>
         <h1 className='flex items-center justify-center text-center font-bold md:gap-2'>
           <span className=''>Maintain</span>
@@ -22,8 +23,8 @@ const Header = () => {
         <h1 className='text-center font-bold'>
           That <span className='text-primary'>Wonderful,</span>
         </h1>
-        <h1 className='flex items-center justify-evenly gap-0 text-center font-bold sm:justify-center sm:gap-2 md:justify-center lg:gap-4'>
-          <Image src={second} className='w-1/3 md:w-auto' alt='second banner' />{' '}
+        <h1 className='flex items-center justify-center gap-2 text-center font-bold sm:justify-center sm:gap-2 md:justify-center lg:gap-4'>
+          <Image src={second} className='w-1/3' alt='second banner' />{' '}
           <aside>Clean Smile</aside>
         </h1>
 
@@ -34,7 +35,9 @@ const Header = () => {
             environment that puts our patients at ease and every one.
           </p>
 
-          <Button className='mx-auto md:ml-0'>Book Appointment</Button>
+          <Button className='mx-auto flex items-center gap-1 md:ml-0'>
+            <FaCalendarAlt /> Book Appointment
+          </Button>
         </div>
       </div>
     </header>

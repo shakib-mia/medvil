@@ -49,12 +49,15 @@ const Feedback = () => {
   return (
     <div className='container py-10'>
       <h3 className='text-center text-secondary'>
-        Patients <span className='text-primary'>Feedback</span>
+        Happy <span className='text-primary'>Voices</span>
       </h3>
 
-      <p className='mx-auto text-center text-base text-grey-2 md:px-3 lg:w-1/2'>
-        Get a full view so you know where to save. Track spending, detect fraud
-        and keep tabs on rising lorem ipsum dolor sit.
+      <p className='mx-auto mt-2 text-center text-base leading-6 text-grey-2 md:px-3 lg:w-7/12'>
+        Discover what our valued clients have to say about their experience at
+        Medvil Dental Hospital. Read heartfelt testimonials showcasing the
+        transformative impact of our care. Your smiles inspire us, and your
+        words reflect the true essence of our commitment to exceptional
+        dentistry.
       </p>
 
       <Swiper

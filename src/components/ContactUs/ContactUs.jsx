@@ -3,6 +3,7 @@ import contactBg from '../../assets/images/contact-bg.png';
 import contact from '../../assets/images/contact.png';
 import Button from '../Button/Button';
 import Image from 'next/image';
+import { FaRegArrowAltCircleRight } from 'react-icons/fa';
 
 const ContactUs = () => {
   return (
@@ -21,7 +22,9 @@ const ContactUs = () => {
             fraud and keep tabs on rising lorem ipsum dolor sit.
           </p>
 
-          <Button className='mx-auto'>Contact Us Now</Button>
+          <Button className='mx-auto flex gap-1'>
+            Contact Us Now <FaRegArrowAltCircleRight />
+          </Button>
         </div>
 
         <Image src={contact} alt='contact' className='mt-6' />

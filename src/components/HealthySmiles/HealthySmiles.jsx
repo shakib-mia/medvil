@@ -79,7 +79,7 @@ const HealthySmiles = () => {
               thorough dental cleaning and exam to make
             </p>
 
-            <ul className='my-3 flex flex-col gap-2 font-medium text-secondary'>
+            <ul className='mx-4 my-3 flex flex-col gap-2 font-medium text-secondary lg:mx-0'>
               <li className='flex gap-1'>
                 <div className='flex h-3 w-3 items-center justify-center rounded-full bg-primary text-white'>
                   &#x2713;

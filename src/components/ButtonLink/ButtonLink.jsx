@@ -4,7 +4,7 @@ import React from 'react';
 
 const ButtonLink = ({ link, children }) => {
   return (
-    <Link className='link group text-primary' href={link || '/'}>
+    <Link className='link group-[button] group text-primary' href={link || '/'}>
       <div className='relative inline-flex items-center gap-1'>
         {children}{' '}
         <HiArrowLongRight className='relative left-0 inline-block duration-500 group-hover:left-1' />

@@ -11,7 +11,8 @@ h3,
 h4,
 h5,
 h6,
-.link {
+.link,
+.el-messiri {
   font-family: '__El_Messiri_3bcd15', '__El_Messiri_Fallback_3bcd15';
 }
 
