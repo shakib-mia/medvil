@@ -1,68 +1,21 @@
+'use client';
 import Article from '@/components/Article/Article';
 import Layouts from '@/components/Layouts/Layouts';
-import React from 'react';
-import articleImg1 from '@/assets/images/articles/Rectangle 9390.jpg';
-import articleImg2 from '@/assets/images/articles/Rectangle 9390-1.jpg';
+import React, { useEffect, useState } from 'react';
+// import articleImg1 from '@/assets/images/articles/Rectangle 9390.jpg';
+// import articleImg2 from '@/assets/images/articles/Rectangle 9390-1.jpg';
+import axios from 'axios';
 
-const page = () => {
-  const articles = [
-    {
-      image: articleImg1,
-      heading:
-        'Officia deserunt mollitia animi id est laborum Coyium soluta nobis est eligendi optio',
-      date: 'November 07,2023',
-      link: '/',
-    },
-    {
-      image: articleImg2,
-      heading:
-        'Ocumque nihily impedit quo minus id quod sit Laypiquo minus id quod maxime placeat.',
-      date: 'November 07,2023',
-      link: '/',
-    },
-    {
-      image: articleImg1,
-      heading:
-        'Officia deserunt mollitia animi id est laborum Coyium soluta nobis est eligendi optio',
-      date: 'November 07,2023',
-      link: '/',
-    },
-    {
-      image: articleImg2,
-      heading:
-        'Ocumque nihily impedit quo minus id quod sit Laypiquo minus id quod maxime placeat.',
-      date: 'November 07,2023',
-      link: '/',
-    },
-    {
-      image: articleImg1,
-      heading:
-        'Officia deserunt mollitia animi id est laborum Coyium soluta nobis est eligendi optio',
-      date: 'November 07,2023',
-      link: '/',
-    },
-    {
-      image: articleImg2,
-      heading:
-        'Ocumque nihily impedit quo minus id quod sit Laypiquo minus id quod maxime placeat.',
-      date: 'November 07,2023',
-      link: '/',
-    },
-    {
-      image: articleImg1,
-      heading:
-        'Officia deserunt mollitia animi id est laborum Coyium soluta nobis est eligendi optio',
-      date: 'November 07,2023',
-      link: '/',
-    },
-    {
-      image: articleImg2,
-      heading:
-        'Ocumque nihily impedit quo minus id quod sit Laypiquo minus id quod maxime placeat.',
-      date: 'November 07,2023',
-      link: '/',
-    },
-  ];
+async function getData() {
+  const { data } = await axios.get('http://localhost:3000/articles.json');
+  return data;
+}
+const Page = () => {
+  const [articles, setArticles] = useState([]);
+
+  useEffect(() => {
+    getData().then((data) => setArticles(data));
+  }, []);
 
   return (
     <Layouts title='Blog'>
@@ -85,4 +38,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

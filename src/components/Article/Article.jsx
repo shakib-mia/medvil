@@ -11,6 +11,8 @@ const Article = ({ image, heading, date, link }) => {
           src={image}
           alt={heading.split(' ').join('-')}
           className='h-auto w-full rounded-lg transition duration-700 group-hover:grayscale'
+          width={'638'}
+          height={'510'}
         />
         <p className='mt-2 text-base text-grey-2'>{date}</p>
 

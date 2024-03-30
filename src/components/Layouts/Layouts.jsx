@@ -15,7 +15,7 @@ const Layouts = ({ children, title }) => {
   return (
     <>
       <Head>
-        <title>{title}</title>
+        <title>{title} - Medvil</title>
       </Head>
       <div className='relative'>
         <Navbar />

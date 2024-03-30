@@ -1,0 +1,57 @@
+{
+  "image": "/articles/Rectangle%209390.jpg",
+  "heading": "The Comprehensive Care Journey With Medvil Copy",
+  "date": "November 07,2023",
+  "link": "/news/1",
+  "paragraphs": [
+    "Embark on a comprehensive care journey with Medvil. Our range of services, from routine check-ups to specialized treatments, ensures that all your oral health needs are met under one roof. Discover the convenience of holistic dental care.",
+    "Embark on a comprehensive care journey with Medvil. Our range of services, from routine check-ups to specialized treatments, ensures that all your oral health needs are met under one roof. Discover the convenience of holistic dental care."
+  ],
+  "tags": "Dental Services, Holistic Care, Preventive Dentistry",
+  "author": "Admin",
+  "viewCount": 70,
+  "favoriteCount": 60,
+  "fb": "https://www.facebook.com/",
+  "twitter": "https://www.twitter.com/",
+  "instagram": "https://www.instagram.com/",
+  "pinterest": "https://www.pinterest.com/",
+  "comments": [
+    {
+      "id": 1,
+      "comment": {
+        "image": "/comments/sojib-khan.jpg",
+        "name": "Md. Sojib Khan",
+        "date": "June 22, 2023",
+        "text": "Regular physical exercise, a healthy diet, adequate sleep, and reducing caffeine and alcohol can also help manage anxiety symptoms."
+      },
+      "replies": [
+        {
+          "image": "/comments/moon-khan.jpg",
+          "name": "MD Moon Khan",
+          "date": "June 22, 2023",
+          "text": "Regular physical exercise, a healthy diet, adequate sleep, and reducing caffeine and alcohol can also help manage anxiety symptoms."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "comment": {
+        "image": "/comments/gulli-khan.jpg",
+        "name": "Md. Gulli Khan",
+        "date": "June 22, 2023",
+        "text": "Regular physical exercise, a healthy diet, adequate sleep, and reducing caffeine and alcohol can also help manage anxiety symptoms."
+      },
+      "replies": []
+    },
+    {
+      "id": 3,
+      "comment": {
+        "name": "Md. Shakib Mia",
+        "email": "smdshakibmia2001@gmail.com",
+        "text": "comment",
+        "date": "March 30, 2024"
+      },
+      "replies": []
+    }
+  ]
+}
