@@ -5,9 +5,10 @@ import React, { useEffect, useState } from 'react';
 // import articleImg1 from '@/assets/images/articles/Rectangle 9390.jpg';
 // import articleImg2 from '@/assets/images/articles/Rectangle 9390-1.jpg';
 import axios from 'axios';
+import { url } from '@/constants';
 
 async function getData() {
-  const { data } = await axios.get('http://localhost:3000/articles.json');
+  const { data } = await axios.get(`${url}articles.json`);
   return data;
 }
 const Page = () => {

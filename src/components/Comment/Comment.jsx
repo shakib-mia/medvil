@@ -6,22 +6,29 @@ import Reply from '../Reply/Reply';
 import InputField from '../InputField/InputField';
 import Button from '../Button/Button';
 import avatar from '@/assets/images/avatar.jpg';
+import { url } from '@/constants';
 
-async function updateData(updatedArticles) {
-  // console.log(updatedArticles);
-  const res = await fetch('http://localhost:3000/api/updateArticle', {
+async function updateData(updatedArticles, id) {
+  console.log(updatedArticles);
+  const res = await fetch(`${url}/articles.json`);
+  const data = await res.json();
+  const post = data.find((item) => item.postId === id);
+  post.comments = updatedArticles.comments;
+  data[post.postId - 1] = post;
+
+  const postRes = await fetch(`${url}api/updateArticle`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify(updatedArticles),
+    body: JSON.stringify(data),
   });
   // console.log(res);
   if (!res.ok) {
     throw new Error('Failed to update data');
   }
 
-  return res.json();
+  return postRes.json();
 }
 
 const Comment = ({ comment, data, update, setUpdate }) => {
@@ -46,7 +53,7 @@ const Comment = ({ comment, data, update, setUpdate }) => {
     // data.comments.push(comment);
     console.log(data);
 
-    updateData(data).then((res) => {
+    updateData(data, data.postId).then((res) => {
       setUpdate(!update);
       setCommentId(!commentId);
       e.target.reset();

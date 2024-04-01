@@ -16,9 +16,10 @@ import { AiOutlineLoading } from 'react-icons/ai';
 import Comment from '@/components/Comment/Comment';
 import InputField from '@/components/InputField/InputField';
 import Button from '@/components/Button/Button';
+import { url } from '@/constants';
 
 async function getData() {
-  const res = await fetch('http://localhost:3000/articles.json');
+  const res = await fetch(`${url}articles.json`);
   // The return value is *not* serialized
   // You can return Date, Map, Set, etc.
   // console.log(res);
@@ -32,7 +33,7 @@ async function getData() {
 
 async function updateData(updatedArticles) {
   // console.log(updatedArticles);
-  const res = await fetch('http://localhost:3000/api/updateArticle', {
+  const res = await fetch(`${url}api/updateArticle`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -51,13 +52,16 @@ export default function Page() {
   const [data, setData] = useState({});
   const pathname = usePathname();
   const [update, setUpdate] = useState(true);
-
+  // console.log(data);
   useEffect(() => {
     getData()
       .then((data) => {
-        // console.log(data);
+        console.log(
+          // data.find((item) => item.postId === pathname.split('/')[2])
+          data
+        );
         // console.log(data[pathname.split('/')[2] - 1]);
-        setData(data);
+        setData(data[pathname.split('/')[2] - 1]);
       })
       .catch((error) => {
         console.error(error);
@@ -65,7 +69,7 @@ export default function Page() {
       });
   }, [update]);
 
-  const postComment = (e) => {
+  const postComment = async (e) => {
     e.preventDefault();
     const date = new Date();
     const formattedDate = date.toLocaleDateString('en-US', {
@@ -74,7 +78,7 @@ export default function Page() {
       day: 'numeric', // Use the numeric representation of the day of the month.
     });
 
-    console.log(formattedDate);
+    // console.log(formattedDate);
 
     const comment = {
       name: e.target.name.value,
@@ -83,10 +87,19 @@ export default function Page() {
       date: formattedDate,
     };
 
-    data.comments.push({ id: data.comments.length + 1, comment, replies: [] });
     // console.log(data);
 
-    updateData(data).then((data) => setUpdate(!update));
+    const postsRes = await fetch(`${url}articles.json`);
+    const posts = await postsRes.json();
+    posts[data.postId - 1].comments.push({
+      id: data.comments.length + 1,
+      comment,
+      replies: [],
+    });
+
+    // console.log();
+
+    updateData(posts).then((data) => setUpdate(!update));
     e.target.reset();
   };
   // console.log(data);
