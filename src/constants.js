@@ -52,4 +52,4 @@ export const posts = [
   },
 ];
 
-export const url = window.location.origin;
+export const url = 'https://medvil.vercel.app/';
