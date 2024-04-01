@@ -26,6 +26,7 @@ module.exports = {
           DEFAULT: '#036C5F',
           light: '#D5E0DA',
         },
+        green: '#0BBC5C',
         secondary: '#293241',
         info: '#2F80ED',
         success: '#27AE60',

@@ -1,12 +1,11 @@
 [
   {
     "postId": 1,
-    "image": "/articles/Rectangle%209390.jpg",
+    "image": "/articles/post-3-2.jpg",
     "heading": "The Comprehensive Care Journey With Medvil Copy",
     "date": "November 07,2023",
     "link": "/news/1",
     "paragraphs": [
-      "Embark on a comprehensive care journey with Medvil. Our range of services, from routine check-ups to specialized treatments, ensures that all your oral health needs are met under one roof. Discover the convenience of holistic dental care.",
       "Embark on a comprehensive care journey with Medvil. Our range of services, from routine check-ups to specialized treatments, ensures that all your oral health needs are met under one roof. Discover the convenience of holistic dental care."
     ],
     "tags": "Dental Services, Holistic Care, Preventive Dentistry",
@@ -56,15 +55,239 @@
   },
   {
     "postId": 2,
-    "image": "/articles/Rectangle%209390.jpg",
-    "heading": "The Comprehensive Care Journey With Medvil Copy",
-    "date": "November 07,2023",
+    "image": "/articles/post-2-2.jpg",
+    "heading": "Patient-Centric Dentistry At Medvil Copy",
+    "date": "December 10, 2023",
     "link": "/news/2",
     "paragraphs": [
-      "Embark on a comprehensive care journey with Medvil. Our range of services, from routine check-ups to specialized treatments, ensures that all your oral health needs are met under one roof. Discover the convenience of holistic dental care.",
+      "Discover the Medvil difference. Our patient-centric approach goes beyond dental care, creating a personalized and trusting relationship with each individual. Read more to understand how your well-being is our top priority."
+    ],
+    "tags": "Dental Care, Patient Trust, Personalized Dentistry",
+    "author": "Admin",
+    "viewCount": 70,
+    "favoriteCount": 60,
+    "fb": "https://www.facebook.com/",
+    "twitter": "https://www.twitter.com/",
+    "instagram": "https://www.instagram.com/",
+    "pinterest": "https://www.pinterest.com/",
+    "comments": [
+      {
+        "id": 1,
+        "comment": {
+          "image": "/comments/sojib-khan.jpg",
+          "name": "Md. Sojib Khan",
+          "date": "June 22, 2023",
+          "text": "Regular physical exercise, a healthy diet, adequate sleep, and reducing caffeine and alcohol can also help manage anxiety symptoms."
+        },
+        "replies": [
+          {
+            "image": "/comments/moon-khan.jpg",
+            "name": "MD Moon Khan",
+            "date": "June 22, 2023",
+            "text": "Regular physical exercise, a healthy diet, adequate sleep, and reducing caffeine and alcohol can also help manage anxiety symptoms."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "comment": {
+          "image": "/comments/gulli-khan.jpg",
+          "name": "Md. Gulli Khan",
+          "date": "June 22, 2023",
+          "text": "Regular physical exercise, a healthy diet, adequate sleep, and reducing caffeine and alcohol can also help manage anxiety symptoms."
+        },
+        "replies": []
+      },
+      {
+        "id": 3,
+        "comment": {
+          "name": "Md. Shakib Mia",
+          "email": "smdshakibmia2001@gmail.com",
+          "text": "comment",
+          "date": "March 30, 2024"
+        },
+        "replies": []
+      }
+    ]
+  },
+  {
+    "postId": 3,
+    "image": "/articles/Rectangle%209390.jpg",
+    "heading": "Unveiling Medvil’s Advanced Dental Technology Copy",
+    "date": "December 10, 2023",
+    "link": "/news/3",
+    "paragraphs": [
+      "Dive into the future of dentistry with Medvil. Our state-of-the-art technology ensures accurate diagnostics and efficient treatments, setting new standards for oral healthcare. Read on to uncover the innovative tools behind your radiant smile."
+    ],
+    "tags": "Innovative Tools, Precision Dentistry",
+    "author": "Admin",
+    "viewCount": 70,
+    "favoriteCount": 60,
+    "fb": "https://www.facebook.com/",
+    "twitter": "https://www.twitter.com/",
+    "instagram": "https://www.instagram.com/",
+    "pinterest": "https://www.pinterest.com/",
+    "comments": [
+      {
+        "id": 1,
+        "comment": {
+          "image": "/comments/sojib-khan.jpg",
+          "name": "Md. Sojib Khan",
+          "date": "June 22, 2023",
+          "text": "Regular physical exercise, a healthy diet, adequate sleep, and reducing caffeine and alcohol can also help manage anxiety symptoms."
+        },
+        "replies": [
+          {
+            "image": "/comments/moon-khan.jpg",
+            "name": "MD Moon Khan",
+            "date": "June 22, 2023",
+            "text": "Regular physical exercise, a healthy diet, adequate sleep, and reducing caffeine and alcohol can also help manage anxiety symptoms."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "comment": {
+          "image": "/comments/gulli-khan.jpg",
+          "name": "Md. Gulli Khan",
+          "date": "June 22, 2023",
+          "text": "Regular physical exercise, a healthy diet, adequate sleep, and reducing caffeine and alcohol can also help manage anxiety symptoms."
+        },
+        "replies": []
+      },
+      {
+        "id": 3,
+        "comment": {
+          "name": "Md. Shakib Mia",
+          "email": "smdshakibmia2001@gmail.com",
+          "text": "comment",
+          "date": "March 30, 2024"
+        },
+        "replies": []
+      }
+    ]
+  },
+  {
+    "postId": 4,
+    "image": "/articles/post-3-2.jpg",
+    "heading": "The Comprehensive Care Journey With Medvil Copy",
+    "date": "November 07,2023",
+    "link": "/news/1",
+    "paragraphs": [
       "Embark on a comprehensive care journey with Medvil. Our range of services, from routine check-ups to specialized treatments, ensures that all your oral health needs are met under one roof. Discover the convenience of holistic dental care."
     ],
     "tags": "Dental Services, Holistic Care, Preventive Dentistry",
+    "author": "Admin",
+    "viewCount": 70,
+    "favoriteCount": 60,
+    "fb": "https://www.facebook.com/",
+    "twitter": "https://www.twitter.com/",
+    "instagram": "https://www.instagram.com/",
+    "pinterest": "https://www.pinterest.com/",
+    "comments": [
+      {
+        "id": 1,
+        "comment": {
+          "image": "/comments/sojib-khan.jpg",
+          "name": "Md. Sojib Khan",
+          "date": "June 22, 2023",
+          "text": "Regular physical exercise, a healthy diet, adequate sleep, and reducing caffeine and alcohol can also help manage anxiety symptoms."
+        },
+        "replies": [
+          {
+            "image": "/comments/moon-khan.jpg",
+            "name": "MD Moon Khan",
+            "date": "June 22, 2023",
+            "text": "Regular physical exercise, a healthy diet, adequate sleep, and reducing caffeine and alcohol can also help manage anxiety symptoms."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "comment": {
+          "image": "/comments/gulli-khan.jpg",
+          "name": "Md. Gulli Khan",
+          "date": "June 22, 2023",
+          "text": "Regular physical exercise, a healthy diet, adequate sleep, and reducing caffeine and alcohol can also help manage anxiety symptoms."
+        },
+        "replies": [
+          {
+            "name": "Md. Shakib Mia",
+            "email": "smdshakibmia2001@gmail.com",
+            "text": "12345",
+            "date": "April 1, 2024"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "postId": 5,
+    "image": "/articles/post-2-2.jpg",
+    "heading": "Patient-Centric Dentistry At Medvil Copy",
+    "date": "December 10, 2023",
+    "link": "/news/2",
+    "paragraphs": [
+      "Discover the Medvil difference. Our patient-centric approach goes beyond dental care, creating a personalized and trusting relationship with each individual. Read more to understand how your well-being is our top priority."
+    ],
+    "tags": "Dental Care, Patient Trust, Personalized Dentistry",
+    "author": "Admin",
+    "viewCount": 70,
+    "favoriteCount": 60,
+    "fb": "https://www.facebook.com/",
+    "twitter": "https://www.twitter.com/",
+    "instagram": "https://www.instagram.com/",
+    "pinterest": "https://www.pinterest.com/",
+    "comments": [
+      {
+        "id": 1,
+        "comment": {
+          "image": "/comments/sojib-khan.jpg",
+          "name": "Md. Sojib Khan",
+          "date": "June 22, 2023",
+          "text": "Regular physical exercise, a healthy diet, adequate sleep, and reducing caffeine and alcohol can also help manage anxiety symptoms."
+        },
+        "replies": [
+          {
+            "image": "/comments/moon-khan.jpg",
+            "name": "MD Moon Khan",
+            "date": "June 22, 2023",
+            "text": "Regular physical exercise, a healthy diet, adequate sleep, and reducing caffeine and alcohol can also help manage anxiety symptoms."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "comment": {
+          "image": "/comments/gulli-khan.jpg",
+          "name": "Md. Gulli Khan",
+          "date": "June 22, 2023",
+          "text": "Regular physical exercise, a healthy diet, adequate sleep, and reducing caffeine and alcohol can also help manage anxiety symptoms."
+        },
+        "replies": []
+      },
+      {
+        "id": 3,
+        "comment": {
+          "name": "Md. Shakib Mia",
+          "email": "smdshakibmia2001@gmail.com",
+          "text": "comment",
+          "date": "March 30, 2024"
+        },
+        "replies": []
+      }
+    ]
+  },
+  {
+    "postId": 6,
+    "image": "/articles/Rectangle%209390.jpg",
+    "heading": "Unveiling Medvil’s Advanced Dental Technology Copy",
+    "date": "December 10, 2023",
+    "link": "/news/3",
+    "paragraphs": [
+      "Dive into the future of dentistry with Medvil. Our state-of-the-art technology ensures accurate diagnostics and efficient treatments, setting new standards for oral healthcare. Read on to uncover the innovative tools behind your radiant smile."
+    ],
+    "tags": "Innovative Tools, Precision Dentistry",
     "author": "Admin",
     "viewCount": 70,
     "favoriteCount": 60,

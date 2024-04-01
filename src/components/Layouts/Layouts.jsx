@@ -8,14 +8,10 @@ import Head from 'next/head';
 import Link from 'next/link';
 
 const Layouts = ({ children, title }) => {
-  // const { previousRoute } = useRouteHistory();
-  // console.log(previousRoute);
-
-  // const pathname = usePathname();
   return (
     <>
       <Head>
-        <title>{title} - Medvil</title>
+        <title>{title ? <>{title} - Medvil</> : 'Loading...'}</title>
       </Head>
       <div className='relative'>
         <Navbar />

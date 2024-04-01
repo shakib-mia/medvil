@@ -10,7 +10,7 @@ const Categories = () => {
     'Web Design',
   ];
   return (
-    <div className='mt-[2rem] rounded-lg border p-2 lg:p-3'>
+    <div className='mt-[2rem] rounded-lg'>
       <h4 className='mb-3'>Categories</h4>
 
       <ul className='flex flex-col gap-2'>

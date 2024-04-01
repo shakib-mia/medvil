@@ -10,7 +10,7 @@ const Article = ({ image, heading, date, link }) => {
         <Image
           src={image}
           alt={heading.split(' ').join('-')}
-          className='h-auto w-full rounded-lg transition duration-700 group-hover:grayscale'
+          className='!h-[510px] w-full rounded-lg transition duration-700 group-hover:grayscale '
           width={'638'}
           height={'510'}
         />

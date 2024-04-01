@@ -17,9 +17,15 @@ import Comment from '@/components/Comment/Comment';
 import InputField from '@/components/InputField/InputField';
 import Button from '@/components/Button/Button';
 import { url } from '@/constants';
+import Suggestions from '@/components/Suggestions/Suggestions';
+import RecentPost from '@/components/RecentPost/RecentPost';
+import RecentPosts from '@/components/RecentPosts/RecentPosts';
+import Categories from '@/components/Categories/Categories';
+import Head from 'next/head';
+// import Head from 'next/head';
 
 async function getData() {
-  const res = await fetch(`${url}articles.json`);
+  const res = await fetch(`${url}/articles.json`);
   // The return value is *not* serialized
   // You can return Date, Map, Set, etc.
   // console.log(res);
@@ -33,7 +39,7 @@ async function getData() {
 
 async function updateData(updatedArticles) {
   // console.log(updatedArticles);
-  const res = await fetch(`${url}api/updateArticle`, {
+  const res = await fetch(`${url}/api/updateArticle`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -56,10 +62,10 @@ export default function Page() {
   useEffect(() => {
     getData()
       .then((data) => {
-        console.log(
-          // data.find((item) => item.postId === pathname.split('/')[2])
-          data
-        );
+        // console.log(
+        //   // data.find((item) => item.postId === pathname.split('/')[2])
+        //   data
+        // );
         // console.log(data[pathname.split('/')[2] - 1]);
         setData(data[pathname.split('/')[2] - 1]);
       })
@@ -89,7 +95,7 @@ export default function Page() {
 
     // console.log(data);
 
-    const postsRes = await fetch(`${url}articles.json`);
+    const postsRes = await fetch(`${url}/articles.json`);
     const posts = await postsRes.json();
     posts[data.postId - 1].comments.push({
       id: data.comments.length + 1,
@@ -109,8 +115,8 @@ export default function Page() {
       {data && data.paragraphs?.length ? (
         <Layouts title={data.heading}>
           <div className='container py-10'>
-            <div className='flex'>
-              <div className='w-7/12'>
+            <div className='flex flex-col gap-4 xl:flex-row'>
+              <div className='w-full xl:w-7/12'>
                 <Image
                   src={data.image}
                   alt={data.heading}
@@ -224,7 +230,11 @@ export default function Page() {
                   </form>
                 </div>
               </div>
-              <div className='w-5/12'></div>
+              <div className='w-full rounded-lg bg-primary-light p-3 xl:w-5/12'>
+                {/* <Suggestions /> */}
+                <RecentPosts />
+                <Categories />
+              </div>
             </div>
           </div>
         </Layouts>

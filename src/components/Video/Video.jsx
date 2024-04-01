@@ -23,7 +23,7 @@ const Video = ({ placeholder, videoLink }) => {
       </div>
 
       {showVideo && (
-        <div className='fixed left-0 top-0 flex h-screen w-screen items-center justify-center backdrop-blur'>
+        <div className='fixed left-0 top-0 z-10 flex h-screen w-screen items-center justify-center backdrop-blur'>
           <div className='relative aspect-[560/312] w-11/12 lg:w-1/2'>
             <iframe
               //   width='560'
@@ -31,7 +31,7 @@ const Video = ({ placeholder, videoLink }) => {
               src={videoLink}
               title='YouTube video player'
               frameborder='0'
-              className='h-full w-full'
+              className='z-10 h-full w-full'
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
               allowfullscreen
             ></iframe>
