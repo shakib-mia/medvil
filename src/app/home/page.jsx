@@ -1,3 +1,4 @@
+import Achievements from '@/components/Achievements/Achievements';
 import CTA from '@/components/CTA/CTA';
 import Consult from '@/components/Consult/Consult';
 import Header2 from '@/components/Header2/Header2';
@@ -68,6 +69,7 @@ const page = () => {
       <CTA />
       <Consult />
       <Services2 />
+      <Achievements />
     </div>
   );
 };
