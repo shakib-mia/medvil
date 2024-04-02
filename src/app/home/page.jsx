@@ -1,3 +1,4 @@
+import CTA from '@/components/CTA/CTA';
 import Header2 from '@/components/Header2/Header2';
 import Navbar from '@/components/Navbar2/Navbar2';
 import React from 'react';
@@ -14,13 +15,13 @@ import {
 const page = () => {
   return (
     <div>
-      <div className='container hidden xl:block'>
+      <div className='container hidden xl:block' id='contact-bar'>
         <div className='flex items-center justify-between py-2'>
           <div className='flex items-center gap-2'>
             <div className='flex items-center gap-1'>
               <FaEnvelope className='text-green' />
               <a
-                className='hover:text-green font-medium transition'
+                className='font-medium transition hover:text-green'
                 href='mailto:contact@medvil.co.uk'
               >
                 contact@medvil.co.uk
@@ -29,7 +30,7 @@ const page = () => {
             <div className='flex items-center gap-2'>
               <FaPhone className='text-green' />
               <a
-                className='hover:text-green font-medium transition'
+                className='font-medium transition hover:text-green'
                 href='+99 - 543 534 5654'
               >
                 +99 - 543 534 5654
@@ -39,16 +40,16 @@ const page = () => {
 
           <div className='flex gap-2'>
             <div className='flex gap-3'>
-              <a className='hover:text-green transition' href='#'>
+              <a className='transition hover:text-green' href='#'>
                 <FaFacebook className='text-2xl' />
               </a>
-              <a className='hover:text-green transition' href='#'>
+              <a className='transition hover:text-green' href='#'>
                 <FaTwitter className='text-2xl' />
               </a>
-              <a className='hover:text-green transition' href='#'>
+              <a className='transition hover:text-green' href='#'>
                 <FaPinterest className='text-2xl' />
               </a>
-              <a className='hover:text-green transition' href='#'>
+              <a className='transition hover:text-green' href='#'>
                 <FaInstagram className='text-2xl' />
               </a>
             </div>
@@ -62,6 +63,7 @@ const page = () => {
       </div>
       <Navbar />
       <Header2 />
+      <CTA />
     </div>
   );
 };

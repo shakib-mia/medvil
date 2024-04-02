@@ -10,7 +10,7 @@ const Button = (props) => {
 
   return (
     <button
-      className={`group flex h-[3rem] w-[12rem] items-center justify-center rounded-lg border-2 ${variants} text-base font-bold duration-[150ms] md:h-[4rem] md:w-[13.75rem] ${className ? ' ' + className : ''}`}
+      className={`${className ? className + ' ' : ''} group flex h-[3rem] w-[12rem] items-center justify-center rounded-lg border-2 ${variants} text-base font-bold duration-[150ms] md:h-[4rem] md:w-[13.75rem]`}
       onClick={onClick}
       id={id}
       style={style}

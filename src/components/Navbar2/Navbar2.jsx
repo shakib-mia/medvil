@@ -43,23 +43,6 @@ const Navbar = () => {
 
   const [contentHeight, setContentHeight] = useState('0px');
 
-  const [isSticky, setIsSticky] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      // Set the sticky state based on scroll position
-      setIsSticky(window.scrollY > 30);
-    };
-
-    // Add the event listener
-    window.addEventListener('scroll', handleScroll);
-
-    // Clean up the event listener on component unmount
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   useEffect(() => {
     // const ulElement = document.querySelector('#navbar');
     // console.log(ulElement.clientHeight);
@@ -79,7 +62,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`bg-green z-[9999] w-full ${isSticky && 'fixed left-0 top-0 '}`}
+      className={`sticky left-0 top-0 z-[9999] w-full bg-green`}
       id={'navbar'}
       style={
         {
@@ -88,7 +71,7 @@ const Navbar = () => {
       }
     >
       <div className='container flex items-center justify-between pb-[0.875rem] pt-2'>
-        <Link href={'/'} className='inline-block w-1/6'>
+        <Link href={'/'} className='inline-block w-1/3 xl:w-1/6'>
           <Image src={logo} alt='logo' />
         </Link>
 
@@ -153,7 +136,7 @@ const Navbar = () => {
           {/* <Image src={cart} alt='cart' className='h-3 w-3 cursor-pointer' /> */}
           {/* <IoCartOutline /> */}
           <Button
-            className='text-green flex gap-2 !rounded-full border-white bg-white hover:!bg-transparent hover:text-white'
+            className='flex gap-2 !rounded-full border-white bg-white !text-green hover:!bg-transparent hover:!text-white'
             onClick={() => alert('object')}
           >
             Appointment
