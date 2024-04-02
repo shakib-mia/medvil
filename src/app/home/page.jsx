@@ -4,6 +4,7 @@ import CaseStudies from '@/components/CaseStudies/CaseStudies';
 import Consult from '@/components/Consult/Consult';
 import Consultation from '@/components/Consultation/Consultation';
 import Experts from '@/components/Experts/Experts';
+import Footer2 from '@/components/Footer2/Footer2';
 import Header2 from '@/components/Header2/Header2';
 import Navbar from '@/components/Navbar2/Navbar2';
 import Partners from '@/components/Partners/Partners';
@@ -82,6 +83,7 @@ const page = () => {
       <RecentBlogs />
       <Partners />
       <Consultation />
+      <Footer2 />
     </div>
   );
 };
