@@ -1,6 +1,8 @@
 import CTA from '@/components/CTA/CTA';
+import Consult from '@/components/Consult/Consult';
 import Header2 from '@/components/Header2/Header2';
 import Navbar from '@/components/Navbar2/Navbar2';
+import Services2 from '@/components/Services2/Services2';
 import React from 'react';
 import { FaSearch } from 'react-icons/fa';
 import {
@@ -64,6 +66,8 @@ const page = () => {
       <Navbar />
       <Header2 />
       <CTA />
+      <Consult />
+      <Services2 />
     </div>
   );
 };
