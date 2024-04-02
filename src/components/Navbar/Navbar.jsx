@@ -45,7 +45,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       // Set the sticky state based on scroll position
-      setIsSticky(window.scrollY > 30);
+      setIsSticky(window.scrollY > 100);
     };
 
     // Add the event listener

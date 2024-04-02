@@ -33,15 +33,15 @@ const Services2 = () => {
   ];
 
   return (
-    <div className='pb-10'>
+    <div className='pb-4 xl:pb-10'>
       <p className='text-center text-lg font-medium'>Our Services</p>
       <h3 className='text-center text-[#3F3A64]'>
         Medical <span className='text-green'>Shaped</span> Solution
       </h3>
 
-      <div className='container mt-6 grid grid-cols-3 gap-3'>
+      <div className='container mt-6 grid grid-cols-1 gap-3 md:grid-cols-2 xl:grid-cols-3'>
         {items.map(({ image, heading, text }, key) => (
-          <div className='p-5 shadow-[0_0_80px_#CCCDCD40]' key={key}>
+          <div className='p-2 shadow-[0_0_80px_#CCCDCD40] xl:p-5' key={key}>
             <Image src={image} alt={heading} width={80} height={80} />
             <h4 className='mb-2 mt-[2rem] text-[#3F3A64]'>{heading}</h4>
             <p className='mb-[2rem] text-grey-2'>{text}</p>
@@ -52,7 +52,7 @@ const Services2 = () => {
         ))}
       </div>
 
-      <div className='relative overflow-hidden py-10'>
+      <div className='relative overflow-hidden py-4 xl:py-10'>
         <Image
           className='absolute right-0 top-0 rotate-45'
           src={consultSvg.src}

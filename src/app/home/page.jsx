@@ -1,9 +1,15 @@
 import Achievements from '@/components/Achievements/Achievements';
 import CTA from '@/components/CTA/CTA';
+import CaseStudies from '@/components/CaseStudies/CaseStudies';
 import Consult from '@/components/Consult/Consult';
+import Consultation from '@/components/Consultation/Consultation';
+import Experts from '@/components/Experts/Experts';
 import Header2 from '@/components/Header2/Header2';
 import Navbar from '@/components/Navbar2/Navbar2';
+import Partners from '@/components/Partners/Partners';
+import RecentBlogs from '@/components/RecentBlogs/RecentBlogs';
 import Services2 from '@/components/Services2/Services2';
+import WhyChoose2 from '@/components/WhyChoose2/WhyChoose2';
 import React from 'react';
 import { FaSearch } from 'react-icons/fa';
 import {
@@ -70,6 +76,12 @@ const page = () => {
       <Consult />
       <Services2 />
       <Achievements />
+      <WhyChoose2 />
+      <Experts />
+      <CaseStudies />
+      <RecentBlogs />
+      <Partners />
+      <Consultation />
     </div>
   );
 };
