@@ -116,13 +116,14 @@ export default function Page() {
         <Layouts title={data.heading}>
           <div className='container py-10'>
             <div className='flex flex-col gap-4 xl:flex-row'>
-              <div className='w-full xl:w-7/12'>
+              <div className='w-full xl:w-8/12'>
                 <Image
                   src={data.image}
                   alt={data.heading}
                   layout='responsive'
                   width={600}
                   height={100}
+                  className='rounded-lg'
                 />
                 <div className='mt-3 flex gap-3'>
                   <div className='flex items-center gap-1'>
@@ -230,7 +231,7 @@ export default function Page() {
                   </form>
                 </div>
               </div>
-              <div className='w-full rounded-lg bg-primary-light p-3 xl:w-5/12'>
+              <div className='w-full rounded-lg bg-[#F4F8F6] p-3 xl:w-4/12'>
                 {/* <Suggestions /> */}
                 <RecentPosts />
                 <Categories />

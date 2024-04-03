@@ -52,7 +52,7 @@ const Services2 = () => {
         ))}
       </div>
 
-      <div className='relative overflow-hidden py-4 xl:py-10'>
+      <div className='relative overflow-hidden py-4 xl:pb-7 xl:pt-10'>
         <Image
           className='absolute right-0 top-0 rotate-45'
           src={consultSvg.src}

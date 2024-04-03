@@ -3,7 +3,7 @@ import Button from '../Button/Button';
 
 const Consultation = () => {
   return (
-    <div className='bg-grey-5 py-4 xl:py-10'>
+    <div className='bg-grey-5 py-4 xl:py-6 2xl:py-10'>
       <div className='container'>
         <div className='mx-auto w-full xl:w-4/5'>
           <p className='text-center text-lg font-medium'>Contact</p>

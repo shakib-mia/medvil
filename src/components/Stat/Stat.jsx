@@ -7,7 +7,7 @@ const Stat = ({ textPrimary, textGreen }) => {
   const pathname = usePathname();
   return (
     <div
-      className={`container flex flex-wrap ${pathname !== '/home' && 'mt-[9.5rem]'} items-center justify-between text-center md:flex-nowrap`}
+      className={`container flex flex-wrap ${pathname !== '/home-v2' && 'mt-[9.5rem]'} items-center justify-between text-center md:flex-nowrap`}
     >
       <div className='w-1/2 py-3 xl:w-auto'>
         <div

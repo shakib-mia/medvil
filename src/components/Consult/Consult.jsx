@@ -15,9 +15,9 @@ const Consult = () => {
         backgroundPositionX: '-15%',
       }}
     >
-      <div className='container grid grid-cols-1 items-center gap-10 py-10 xl:grid-cols-2'>
+      <div className='container grid grid-cols-1 items-center gap-10 py-[14rem] xl:grid-cols-2'>
         <aside className='relative'>
-          <div className='absolute -left-1 -top-8 w-[320px] rounded bg-green bg-opacity-90 p-4 text-white xl:left-10'>
+          <div className='absolute -left-1 -top-[10rem] w-[387px] rounded bg-green bg-opacity-90 p-4 text-white shadow-[10px_12px_12px_rgba(10.999999999999973_188.00000000000006_92.00000000000013_0.17)] xl:left-0'>
             <div className='flex items-center gap-2'>
               <h1>12</h1>
               <h5>{"Years'"} Experience in Medvil</h5>
@@ -27,12 +27,18 @@ const Consult = () => {
           <Image
             src={aboutImage}
             alt='about image'
+            width={468}
+            height={580}
+            // layout='responsive'
             className='mx-auto xl:mx-0 xl:ml-auto'
           />
           <Image
             src={aboutImage2}
             alt='about image'
-            className='absolute -bottom-5 -z-10 xl:left-10'
+            width={198}
+            height={185}
+            // layout='responsive'
+            className='absolute -bottom-5 -z-10 xl:left-0'
           />
         </aside>
         <aside>

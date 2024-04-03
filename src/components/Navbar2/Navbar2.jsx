@@ -72,7 +72,7 @@ const Navbar = () => {
     >
       <div className='container flex items-center justify-between pb-[0.875rem] pt-2'>
         <Link href={'/'} className='inline-block w-1/3 xl:w-1/6'>
-          <Image src={logo} alt='logo' />
+          <Image src={logo} width={141} alt='logo' />
         </Link>
 
         <aside className='xl:hidden'>
@@ -136,7 +136,7 @@ const Navbar = () => {
           {/* <Image src={cart} alt='cart' className='h-3 w-3 cursor-pointer' /> */}
           {/* <IoCartOutline /> */}
           <Button
-            className='flex gap-2 !rounded-full border-white bg-white !text-green hover:!bg-transparent hover:!text-white'
+            className='h-fit w-fit !rounded-full border-white bg-white !px-[2rem] !py-2 !text-green hover:!bg-transparent hover:!text-white'
             onClick={() => alert('object')}
           >
             Appointment

@@ -10,19 +10,19 @@ const DoctorFeedbacks = () => {
   const items = [
     {
       image: feedback1,
-      name: 'EFFIE GAMEZ',
+      name: 'Effie Gamez',
       designation: 'Doctor',
       text: `There are many variations of passages of Lorem Ipsum availa but the majority have suffered alteration in some form`,
     },
     {
       image: feedback2,
-      name: 'INCENT RICE',
+      name: 'Incent Rice',
       designation: 'Doctor',
       text: `There are many variations of passages of Lorem Ipsum availa but the majority have suffered alteration in some form`,
     },
     {
       image: feedback3,
-      name: 'DONNA POLK',
+      name: 'Donna Polk',
       designation: 'Doctor',
       text: `There are many variations of passages of Lorem Ipsum availa but the majority have suffered alteration in some form`,
     },

@@ -3,7 +3,10 @@ import React from 'react';
 
 const CaseStudiesItem = ({ image, text }) => {
   return (
-    <div className='group relative h-auto w-full overflow-hidden rounded-lg xl:h-[26rem] xl:w-[26.5rem]'>
+    <a
+      href='#'
+      className='group relative h-auto w-full overflow-hidden rounded-lg xl:h-[26rem] xl:w-[26.5rem]'
+    >
       <Image
         src={image.src}
         alt={text}
@@ -16,7 +19,7 @@ const CaseStudiesItem = ({ image, text }) => {
       <h5 className='absolute -left-[11rem] bottom-6 w-fit rounded-r-lg bg-white px-3 py-1 text-green transition-[left] duration-700 group-hover:left-0'>
         {text}
       </h5>
-    </div>
+    </a>
   );
 };
 

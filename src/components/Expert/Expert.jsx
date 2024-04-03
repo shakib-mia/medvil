@@ -14,7 +14,7 @@ const Expert = ({ image, name, designation, fee }) => {
         alt={name}
         className='h-auto w-full'
       />
-      <div className='absolute left-0 top-0 hidden h-[232px] w-[312px] bg-black-1 bg-opacity-20 group-hover:block'>
+      <div className='absolute left-0 top-0 hidden h-[226px] w-[312px] bg-black-1 bg-opacity-20 group-hover:block'>
         <div className='relative h-full w-full'>
           <Button className='!absolute !bottom-3 !h-[3rem] !w-[10rem] !rounded-l-none border-l-0 !border-green !bg-green hover:!bg-white hover:!text-green'>
             Make Appointment

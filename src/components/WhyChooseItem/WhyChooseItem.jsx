@@ -6,7 +6,7 @@ const WhyChooseItem = ({ heading, text }) => {
   const [visible, setVisible] = useState(false);
   return (
     <>
-      <label className='flex cursor-pointer justify-between border-b py-[2rem]'>
+      <label className='flex cursor-pointer justify-between border-b py-2'>
         <input
           type='checkbox'
           className='hidden'

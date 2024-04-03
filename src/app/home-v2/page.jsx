@@ -24,7 +24,7 @@ import {
 
 const page = () => {
   return (
-    <div>
+    <>
       <div className='container hidden xl:block' id='contact-bar'>
         <div className='flex items-center justify-between py-2'>
           <div className='flex items-center gap-2'>
@@ -48,7 +48,7 @@ const page = () => {
             </div>
           </div>
 
-          <div className='flex gap-2'>
+          <div className='flex items-center gap-2'>
             <div className='flex gap-3'>
               <a className='transition hover:text-green' href='#'>
                 <FaFacebook className='text-2xl' />
@@ -65,7 +65,11 @@ const page = () => {
             </div>
 
             <div className='flex items-center gap-3'>
-              <input type='text' placeholder='Search' />
+              <input
+                className='px-2 py-1 focus:outline-none'
+                type='text'
+                placeholder='Search'
+              />
               <FaSearch />
             </div>
           </div>
@@ -84,7 +88,7 @@ const page = () => {
       <Partners />
       <Consultation />
       <Footer2 />
-    </div>
+    </>
   );
 };
 

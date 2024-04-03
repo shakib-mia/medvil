@@ -7,6 +7,7 @@ import cart from './../../assets/icons/cart.jpg';
 import Button from '../Button/Button';
 import { usePathname } from 'next/navigation';
 import hamburger from '../../assets/icons/hamburger.png';
+import { FaCaretDown } from 'react-icons/fa6';
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -15,6 +16,12 @@ const Navbar = () => {
     {
       link: '/',
       text: 'Home',
+      dropdownItem: [
+        {
+          link: '/home-v2',
+          text: 'Home v2',
+        },
+      ],
     },
     {
       link: '/about-us',
@@ -103,15 +110,33 @@ const Navbar = () => {
             id='navbar'
           >
             {isClient &&
-              navItems.map(({ link, text }, key) => (
+              navItems.map(({ link, text, dropdownItem }, key) => (
                 <li
                   key={key}
-                  className={`${pathname === link ? 'font-medium text-primary' : 'text-black-1'} relative flex items-center gap-2`}
+                  className={`${pathname === link ? 'font-medium text-primary' : 'text-black-1'} group relative flex items-center gap-2`}
                 >
                   {pathname === link && (
                     <div className='hidden h-[0.125rem] w-[2rem] bg-primary transition duration-500 lg:block'></div>
                   )}
-                  <Link href={link}>{text}</Link>
+                  <Link className='inline-flex items-center gap-1' href={link}>
+                    {text}{' '}
+                    {dropdownItem && dropdownItem.length && (
+                      <FaCaretDown className='duration-200 group-hover:rotate-180' />
+                    )}
+                  </Link>
+                  <div className='absolute top-3 z-[99] hidden group-hover:block'>
+                    {/* {dropdownItem?.length} */}
+                    {dropdownItem &&
+                      dropdownItem.map(({ link, text }, key) => (
+                        <Link
+                          className='inline-block w-[8.5rem] rounded bg-primary px-3 py-1 text-white transition hover:bg-primary-dark'
+                          href={link}
+                          key={key}
+                        >
+                          {text}
+                        </Link>
+                      ))}
+                  </div>
                 </li>
               ))}
 
@@ -128,15 +153,33 @@ const Navbar = () => {
         </aside>
 
         <ul className='hidden gap-[2.5rem] text-lg xl:flex'>
-          {navItems.map(({ link, text }, key) => (
+          {navItems.map(({ link, text, dropdownItem }, key) => (
             <li
               key={key}
-              className={`${pathname === link ? 'font-medium text-primary' : 'text-black-1'} relative`}
+              className={`${pathname === link ? 'font-medium text-primary' : 'text-black-1'} group relative`}
             >
               {pathname === link && (
                 <div className='absolute left-0 right-0 top-[-34px] m-auto h-[2rem] w-[0.125rem] bg-primary transition duration-500'></div>
               )}
-              <Link href={link}>{text}</Link>
+              <Link className='inline-flex items-center gap-1' href={link}>
+                {text}{' '}
+                {dropdownItem && dropdownItem.length && (
+                  <FaCaretDown className='duration-200 group-hover:rotate-180' />
+                )}
+              </Link>
+              <div className='absolute z-[99] hidden group-hover:block'>
+                {/* {dropdownItem?.length} */}
+                {dropdownItem &&
+                  dropdownItem.map(({ link, text }, key) => (
+                    <Link
+                      className='inline-block w-[8.5rem] rounded bg-primary px-3 py-1 text-white transition hover:bg-primary-dark'
+                      href={link}
+                      key={key}
+                    >
+                      {text}
+                    </Link>
+                  ))}
+              </div>
             </li>
           ))}
         </ul>

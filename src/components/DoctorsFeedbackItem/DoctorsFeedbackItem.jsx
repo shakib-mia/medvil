@@ -7,7 +7,7 @@ const DoctorsFeedbackItem = ({ image, name, designation, text }) => {
       <div className='flex gap-3'>
         <Image src={image} alt={name} />
         <aside>
-          <h4 className='text-secondary'>{name}</h4>
+          <h4 className='capitalize text-secondary'>{name}</h4>
           <p className='mt-1 text-grey-3'>{designation}</p>
         </aside>
       </div>

@@ -28,12 +28,12 @@ const Footer2 = () => {
       className='bg-[#3F3A64] bg-bottom bg-no-repeat pt-7 text-white'
       style={{ backgroundImage: `url(${footerBg.src})` }}
     >
-      <div className='container'>
+      <div className='px-3'>
         <div
           className='w-full bg-[size:100%_100%] bg-no-repeat py-6'
           style={{ backgroundImage: `url(${newsLetter.src})` }}
         >
-          <div className='mx-auto w-full xl:w-1/2'>
+          <div className='mx-auto w-full xl:w-1/3'>
             <h4 className='text-center'>Subscribe to our newsletter</h4>
             <p className='mb-3 mt-2 text-center text-base xl:text-lg'>
               Subscribe to our newsletter and join a community of
@@ -108,16 +108,22 @@ const Footer2 = () => {
 
             <ul className='mt-3 flex flex-col gap-2'>
               <li>
-                <a href='#'>Who We Are</a>
+                <Link href='/'>Home</Link>
               </li>
               <li>
-                <a href='#'>What We Do</a>
+                <Link href='/about-us'>About Us</Link>
               </li>
               <li>
-                <a href='#'>New Patients</a>
+                <Link href='/services'>Services</Link>
               </li>
               <li>
-                <a href='#'>Contact Us</a>
+                <Link href='/doctors'>Doctors</Link>
+              </li>
+              <li>
+                <Link href='/news'>News</Link>
+              </li>
+              <li>
+                <Link href='/contact'>Contact</Link>
               </li>
             </ul>
           </div>
@@ -145,20 +151,24 @@ const Footer2 = () => {
           <div className='w-full md:w-1/2 md:p-2 xl:w-1/4 xl:p-0'>
             <h4 className='mb-3'>Gallery</h4>
             {/* {blogs.length} */}
-            <div className='grid grid-cols-2 gap-2'>
-              {blogs.map((item, key) => (
+            <div className='grid grid-cols-2 gap-1'>
+              {blogs.slice(0, 2).map((item, key) => (
                 <Link
-                  className='inline-block h-[112px] w-[112px]'
+                  // className='inline-block h-[112px] w-[112px]'
                   key={key}
                   href={item.link}
                 >
-                  <Image
-                    src={item.image}
-                    alt={item.heading}
-                    width={112}
-                    height={112}
-                    className='h-full w-full'
-                  />
+                  <div className='h-[7rem] w-[10rem] overflow-hidden'>
+                    <Image
+                      src={item.image}
+                      alt={item.heading}
+                      // layout='responsive'
+                      width={112}
+                      height={112}
+                      className='h-full w-full scale-125'
+                    />
+                  </div>
+                  <h6 className='mt-2 !text-sm'>{item.heading}</h6>
                 </Link>
               ))}
             </div>
