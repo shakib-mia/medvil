@@ -83,7 +83,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`z-[9999] w-full bg-white ${isSticky && 'fixed left-0 top-0 '}`}
+      className={`z-[9999] w-full bg-white transition ${isSticky && 'sticky left-0 top-0 '}`}
       id={'navbar'}
       style={{
         boxShadow: '0px 0px 80px 0px #CDCCDC40',
