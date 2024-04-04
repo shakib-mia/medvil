@@ -18,6 +18,9 @@ async function getPosts() {
 
 const Footer2 = () => {
   const [blogs, setBlogs] = useState([]);
+  const date = new Date();
+
+  // console.log();
 
   useEffect(() => {
     getPosts().then((data) => setBlogs(data.slice(0, 4)));
@@ -75,28 +78,28 @@ const Footer2 = () => {
               <div className='flex gap-2'>
                 <a
                   href='#'
-                  className='inline-flex h-[2rem] w-[2rem] items-center justify-center rounded-lg border-2 border-white text-green transition hover:border-green hover:bg-green hover:text-white'
+                  className='inline-flex h-[2rem] w-[2rem] items-center justify-center rounded-md border border-green text-green transition hover:border-green hover:bg-green hover:text-white'
                 >
                   <FaFacebookF />
                 </a>
 
                 <a
                   href='#'
-                  className='inline-flex h-[2rem] w-[2rem] items-center justify-center rounded-lg border-2 border-white text-green transition hover:border-green hover:bg-green hover:text-white'
+                  className='inline-flex h-[2rem] w-[2rem] items-center justify-center rounded-md border border-green text-green transition hover:border-green hover:bg-green hover:text-white'
                 >
                   <FaTwitter />
                 </a>
 
                 <a
                   href='#'
-                  className='inline-flex h-[2rem] w-[2rem] items-center justify-center rounded-lg border-2 border-white text-green transition hover:border-green hover:bg-green hover:text-white'
+                  className='inline-flex h-[2rem] w-[2rem] items-center justify-center rounded-md border border-green text-green transition hover:border-green hover:bg-green hover:text-white'
                 >
                   <FaInstagram />
                 </a>
 
                 <a
                   href='#'
-                  className='inline-flex h-[2rem] w-[2rem] items-center justify-center rounded-lg border-2 border-white text-green transition hover:border-green hover:bg-green hover:text-white'
+                  className='inline-flex h-[2rem] w-[2rem] items-center justify-center rounded-md border border-green text-green transition hover:border-green hover:bg-green hover:text-white'
                 >
                   <FaVideo />
                 </a>
@@ -179,7 +182,7 @@ const Footer2 = () => {
       <hr className='bg-[#FFFFFF61]' />
 
       <p className='py-4 text-center text-sm'>
-        © 2021 Dortors • All Rights Reserved
+        © {date.getFullYear()} Medvil • All Rights Reserved
       </p>
     </footer>
   );
