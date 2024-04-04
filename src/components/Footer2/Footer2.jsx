@@ -111,22 +111,34 @@ const Footer2 = () => {
 
             <ul className='mt-3 flex flex-col gap-2'>
               <li>
-                <Link href='/'>Home</Link>
+                <Link className='transition hover:text-green' href='/'>
+                  Home
+                </Link>
               </li>
               <li>
-                <Link href='/about-us'>About Us</Link>
+                <Link className='transition hover:text-green' href='/about-us'>
+                  About Us
+                </Link>
               </li>
               <li>
-                <Link href='/services'>Services</Link>
+                <Link className='transition hover:text-green' href='/services'>
+                  Services
+                </Link>
               </li>
               <li>
-                <Link href='/doctors'>Doctors</Link>
+                <Link className='transition hover:text-green' href='/doctors'>
+                  Doctors
+                </Link>
               </li>
               <li>
-                <Link href='/news'>News</Link>
+                <Link className='transition hover:text-green' href='/news'>
+                  News
+                </Link>
               </li>
               <li>
-                <Link href='/contact'>Contact</Link>
+                <Link className='transition hover:text-green' href='/contact'>
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
@@ -135,19 +147,29 @@ const Footer2 = () => {
 
             <ul className='mt-3 flex flex-col gap-2'>
               <li>
-                <a href='#'>Consultation call</a>
+                <a className='transition hover:text-green' href='#'>
+                  Consultation call
+                </a>
               </li>
               <li>
-                <a href='#'>Help + support</a>
+                <a className='transition hover:text-green' href='#'>
+                  Help + support
+                </a>
               </li>
               <li>
-                <a href='#'>White label</a>
+                <a className='transition hover:text-green' href='#'>
+                  White label
+                </a>
               </li>
               <li>
-                <a href='#'>Appointment</a>
+                <a className='transition hover:text-green' href='#'>
+                  Appointment
+                </a>
               </li>
               <li>
-                <a href='#'>Sign in</a>
+                <a className='transition hover:text-green' href='#'>
+                  Sign in
+                </a>
               </li>
             </ul>
           </div>
