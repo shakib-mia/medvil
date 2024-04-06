@@ -10,6 +10,8 @@ import { FaFacebookF } from 'react-icons/fa6';
 import { RiYoutubeLine } from 'react-icons/ri';
 import { FaTwitter } from 'react-icons/fa';
 import { FaLinkedinIn } from 'react-icons/fa6';
+import Link from 'next/link';
+import QuickLinks from '../QuickLinks/QuickLinks';
 
 const Footer = () => {
   return (
@@ -56,20 +58,7 @@ const Footer = () => {
           <div className='w-full text-white md:w-1/2 md:p-2 xl:w-1/6 xl:p-0'>
             <h5>Quick Links</h5>
 
-            <ul className='mt-3 flex flex-col gap-2'>
-              <li>
-                <a href='#'>Who We Are</a>
-              </li>
-              <li>
-                <a href='#'>What We Do</a>
-              </li>
-              <li>
-                <a href='#'>New Patients</a>
-              </li>
-              <li>
-                <a href='#'>Contact Us</a>
-              </li>
-            </ul>
+            <QuickLinks />
           </div>
           <div className='w-full md:w-1/2 md:p-2 xl:w-1/5 xl:p-0'>
             <h5>Contact info</h5>
@@ -123,7 +112,7 @@ const Footer = () => {
           <div className='w-full md:w-1/2 md:p-2 xl:w-1/4 xl:p-0'>
             <h4 className='mb-3'>Newsletter</h4>
             <p className='text-[#F6F2FF]'>
-              Lorem Ipsum is simply dummy text of the printing and industry.{' '}
+              Join our newsletter to receive weekly health news.
             </p>
 
             <div className='my-3 flex overflow-hidden rounded'>

@@ -42,7 +42,11 @@ const Sponsors = () => {
       >
         {allSponsors.map(({ src, alt }) => (
           <SwiperSlide key={alt} className='xl:!w-auto'>
-            <Image src={src} alt={alt} className='mx-auto w-[141px]' />
+            <Image
+              src={src}
+              alt={alt}
+              className='mx-auto w-[160px] xl:w-[141px]'
+            />
           </SwiperSlide>
         ))}
       </Swiper>
