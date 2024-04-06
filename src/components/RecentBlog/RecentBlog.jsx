@@ -6,9 +6,9 @@ import Link from 'next/link';
 
 const RecentBlog = ({ date, viewCount, heading, link, image }) => {
   return (
-    <article>
+    <Link href={link} className='group'>
       <Image
-        className='!h-[314px] rounded-lg'
+        className='!h-[314px] rounded-lg transition duration-700 group-hover:grayscale'
         width={424}
         height={314}
         layout='responsive'
@@ -32,11 +32,11 @@ const RecentBlog = ({ date, viewCount, heading, link, image }) => {
 
       <Link
         href={link}
-        className='inline-flex h-5 w-10 items-center justify-center rounded-full border !border-[#3F3A64] !bg-[#3F3A64] text-white hover:!bg-transparent hover:text-[#3F3A64]'
+        className='inline-flex h-5 w-10 items-center justify-center rounded-full border !border-[#3F3A64] !bg-[#3F3A64] text-white transition hover:!bg-transparent hover:text-[#3F3A64]'
       >
         Read More
       </Link>
-    </article>
+    </Link>
   );
 };
 

@@ -133,9 +133,8 @@ const Footer = () => {
         </div>
       </div>
       <hr className='my-3 bg-[#FFFFFF45]' />
-      <div className='container flex justify-between text-grey-5'>
-        <p>Copyright, Privacy Policy, Sitemap, Accessibility</p>
-        <p>Medical & Dental by Marin Soft Ltd</p>
+      <div className='container text-center text-grey-5'>
+        Copyright &copy;2024 Medvil Dental Hospital. All rights reserved.
       </div>
     </div>
   );
