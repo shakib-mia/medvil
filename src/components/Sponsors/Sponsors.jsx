@@ -45,7 +45,7 @@ const Sponsors = () => {
             <Image
               src={src}
               alt={alt}
-              className='mx-auto w-[160px] xl:w-[141px]'
+              className='mx-auto w-[110px] md:w-[160px] xl:w-[141px]'
             />
           </SwiperSlide>
         ))}
