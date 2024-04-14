@@ -5,8 +5,8 @@ import Link from 'next/link';
 
 const Article = ({ image, heading, date, link }) => {
   return (
-    <article>
-      <div className='relative h-[510px] w-full'>
+    <article className='group'>
+      <Link href={link} className='relative inline-block h-[510px] w-full'>
         <Image
           src={image}
           alt={heading.split(' ').join('-')}
@@ -14,7 +14,7 @@ const Article = ({ image, heading, date, link }) => {
           layout='fill'
           objectFit='cover'
         />
-      </div>
+      </Link>
       <p className='mt-2 text-base text-grey-2'>{date}</p>
 
       <Link

@@ -11,6 +11,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/pagination';
 import 'swiper/css';
 import styles from './Sponsors.module.css';
+import { Autoplay } from 'swiper/modules';
 
 const Sponsors = () => {
   const allSponsors = [
@@ -28,9 +29,12 @@ const Sponsors = () => {
     >
       <Swiper
         className='w-full'
+        autoplay={{ delay: 1000, disableOnInteraction: false }}
+        loop={true}
+        modules={[Autoplay]}
         breakpoints={{
           0: {
-            slidesPerView: 2,
+            slidesPerView: 1,
           },
           768: {
             slidesPerView: 4,
@@ -42,11 +46,15 @@ const Sponsors = () => {
       >
         {allSponsors.map(({ src, alt }) => (
           <SwiperSlide key={alt} className='xl:!w-auto'>
-            <Image
-              src={src}
-              alt={alt}
-              className='mx-auto w-[110px] md:w-[160px] xl:w-[141px]'
-            />
+            <div className='mx-auto w-[110px] md:w-[160px] xl:w-[141px]'>
+              <Image
+                src={src}
+                alt={alt}
+                layout='responsive'
+                width={160}
+                height={90}
+              />
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>

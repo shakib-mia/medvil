@@ -7,7 +7,7 @@ import cart from './../../assets/icons/cart.jpg';
 import Button from '../Button/Button';
 import { usePathname } from 'next/navigation';
 import hamburger from '../../assets/icons/hamburger.png';
-import { FaCaretDown } from 'react-icons/fa6';
+import { FaBars, FaCaretDown } from 'react-icons/fa6';
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -95,8 +95,9 @@ const Navbar = () => {
         </Link>
 
         <aside className='xl:hidden'>
-          <label>
-            <Image src={hamburger} alt='hamburger' className='w-3' />
+          <label className='inline-block rounded bg-primary p-1'>
+            <FaBars className='text-2xl text-white' />
+            {/* <Image src={hamburger} alt='hamburger' className='w-3' /> */}
             <input
               type='checkbox'
               className='hidden'
