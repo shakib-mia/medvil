@@ -24,14 +24,14 @@ const WhyChoose2 = () => {
             />
 
             <WhyChooseItem
-              heading={'Personalized Service'}
+              heading={'24/7 Medical Consultation'}
               text={
                 'Indulge in personalized dental care at Medvil. Our expert team tailors treatments to your unique needs, ensuring a comfortable and exceptional experience.'
               }
             />
 
             <WhyChooseItem
-              heading={'Personalized Service'}
+              heading={'Free Medical Cheekup'}
               text={
                 'Indulge in personalized dental care at Medvil. Our expert team tailors treatments to your unique needs, ensuring a comfortable and exceptional experience.'
               }
