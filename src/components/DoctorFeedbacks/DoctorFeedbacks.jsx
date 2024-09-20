@@ -32,7 +32,7 @@ const DoctorFeedbacks = () => {
     <div className='container mt-[9.5rem]'>
       <Swiper
         slidesPerView={3}
-        className='md:overflow-visible'
+        className='md:!overflow-visible'
         spaceBetween={24}
         breakpoints={{
           0: {

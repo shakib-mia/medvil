@@ -53,4 +53,4 @@ export const posts = [
 ];
 
 // export const url = 'http://localhost:3000/';
-export const url = 'https://medvil.vercel.app';
+export const url = 'https://medvil.vercel.app/';

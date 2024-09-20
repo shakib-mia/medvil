@@ -10,13 +10,13 @@ import { url } from '@/constants';
 
 async function updateData(updatedArticles, id) {
   console.log(updatedArticles);
-  const res = await fetch(`${url}//articles.json`);
+  const res = await fetch(`${url}/articles.json`);
   const data = await res.json();
   const post = data.find((item) => item.postId === id);
   post.comments = updatedArticles.comments;
   data[post.postId - 1] = post;
 
-  const postRes = await fetch(`${url}/api/updateArticle`, {
+  const postRes = await fetch(`${url}api/updateArticle`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

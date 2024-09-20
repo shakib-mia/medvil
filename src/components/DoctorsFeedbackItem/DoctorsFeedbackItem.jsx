@@ -3,7 +3,7 @@ import React from 'react';
 
 const DoctorsFeedbackItem = ({ image, name, designation, text }) => {
   return (
-    <div className='bg-white p-3 py-5 shadow-[0_0_80px_0_#CCCDCD40] md:p-4 xl:px-[2rem]'>
+    <div className='bg-white p-3 py-5 shadow-[0_0_26px_0_#CCCDCD40] transition hover:shadow-[0_0_14px_0_#CCCDCD40] md:p-4 xl:px-[2rem]'>
       <div className='flex gap-3'>
         <Image src={image} alt={name} />
         <aside>

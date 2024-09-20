@@ -4,7 +4,7 @@ import { FaSearch } from 'react-icons/fa';
 import axios from 'axios';
 
 async function getData() {
-  const { data } = await axios.get(`${url}/articles.json`);
+  const { data } = await axios.get(`${url}articles.json`);
   return data;
 }
 

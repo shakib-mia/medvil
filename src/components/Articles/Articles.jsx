@@ -6,7 +6,7 @@ import { url } from '@/constants';
 import { AiOutlineLoading } from 'react-icons/ai';
 
 async function getData() {
-  const { data } = await axios.get(`${url}/articles.json`);
+  const { data } = await axios.get(`${url}articles.json`);
   console.log(data);
   return data;
 }

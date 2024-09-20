@@ -41,7 +41,10 @@ const Services2 = () => {
 
       <div className='container mt-6 grid grid-cols-1 gap-3 md:grid-cols-2 xl:grid-cols-3'>
         {items.map(({ image, heading, text }, key) => (
-          <div className='p-2 shadow-[0_0_80px_#CCCDCD40] xl:p-5' key={key}>
+          <div
+            className='p-2 shadow-[0_0_26px_0_#CCCDCD40] transition hover:shadow-[0_0_14px_0_#CCCDCD40] xl:p-5'
+            key={key}
+          >
             <Image src={image} alt={heading} width={80} height={80} />
             <h4 className='mb-2 mt-[2rem] text-[#3F3A64]'>{heading}</h4>
             <p className='mb-[2rem] text-grey-2'>{text}</p>

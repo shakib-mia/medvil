@@ -25,7 +25,7 @@ import Head from 'next/head';
 // import Head from 'next/head';
 
 async function getData() {
-  const res = await fetch(`${url}/articles.json`);
+  const res = await fetch(`${url}articles.json`);
   // The return value is *not* serialized
   // You can return Date, Map, Set, etc.
   // console.log(res);
@@ -39,7 +39,7 @@ async function getData() {
 
 async function updateData(updatedArticles) {
   // console.log(updatedArticles);
-  const res = await fetch(`${url}/api/updateArticle`, {
+  const res = await fetch(`${url}api/updateArticle`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -95,7 +95,7 @@ export default function Page() {
 
     // console.log(data);
 
-    const postsRes = await fetch(`${url}/articles.json`);
+    const postsRes = await fetch(`${url}articles.json`);
     const posts = await postsRes.json();
     posts[data.postId - 1].comments.push({
       id: data.comments.length + 1,

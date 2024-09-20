@@ -8,7 +8,7 @@ import { FaSearch } from 'react-icons/fa';
 // import { posts } from '@/constants';
 
 async function getData() {
-  const { data } = await axios.get(`${url}/articles.json`);
+  const { data } = await axios.get(`${url}articles.json`);
   return data;
 }
 
