@@ -134,7 +134,11 @@ const Footer = () => {
       </div>
       <hr className='my-3 bg-[#FFFFFF45]' />
       <div className='container text-center text-grey-5'>
-        Copyright &copy;2024 Medvil Dental Hospital. All rights reserved.
+        Copyright &copy;{new Date().getFullYear()} Developed by{' '}
+        <a href='https://raddito.com/' className='font-semibold' rel='nofollow'>
+          Raddito LLC
+        </a>{' '}
+        Designed by: Medvil Dental Hospital. All rights reserved.
       </div>
     </div>
   );
